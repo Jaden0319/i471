@@ -1,0 +1,260 @@
+Script started on 2025-01-21 12:16:30-05:00 [TERM="xterm-256color" TTY="/dev/pts/16" COLUMNS="80" LINES="24"]
+[?2004hjcreech1@remote05:~/tmp$ ps -p $$
+[?2004l    PID TTY          TIME CMD
+2244945 pts/4    00:00:00 bash
+[?2004hjcreech1@remote05:~/tmp$ ls ~/.ssh/id_rsa*
+[?2004lls: cannot access '/home2/jcreech1/.ssh/id_rsa*': No such file or directory
+[?2004hjcreech1@remote05:~/tmp$ ls ~/.ssh/id_rsa*[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssh [K-keygen
+[?2004lGenerating public/private rsa key pair.
+Enter file in which to save the key (/home2/jcreech1/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home2/jcreech1/.ssh/id_rsa
+Your public key has been saved in /home2/jcreech1/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:iBMLyRUR0D9uU03hl9Ist3kVPhf8j6MbmR0dENafHN0 jcreech1@remote05
+The key's randomart image is:
++---[RSA 3072]----+
+|  .o=+    .. ++oo|
+| . o.    ..o..o+E|
+|  + ..   o+ * .+B|
+|   . +o.. .= o =*|
+|    +..oS   o o.o|
+|     .+      =o..|
+|     . .    +... |
+|            ..   |
+|            ..   |
++----[SHA256]-----+
+[?2004hjcreech1@remote05:~/tmp$ ssh [K-copy-id remote
+[?2004l/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home2/jcreech1/.ssh/id_rsa.pub"
+The authenticity of host 'remote (128.226.114.205)' can't be established.
+ED25519 key fingerprint is SHA256:Gh3fQe+7d2fVhnbC6PWYUtme4W4FCsxltGXEVadm2Gw.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+The authenticity of host 'remote (128.226.114.205)' can't be established.
+ED25519 key fingerprint is SHA256:Gh3fQe+7d2fVhnbC6PWYUtme4W4FCsxltGXEVadm2Gw.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+
+/usr/bin/ssh-copy-id: ERROR: Host key verification failed.
+
+[?2004hjcreech1@remote05:~/tmp$ ssh-copy-id remote
+[?2004l/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home2/jcreech1/.ssh/id_rsa.pub"
+The authenticity of host 'remote (128.226.114.205)' can't be established.
+ED25519 key fingerprint is SHA256:Gh3fQe+7d2fVhnbC6PWYUtme4W4FCsxltGXEVadm2Gw.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+jcreech1@remote's password: 
+Permission denied, please try again.
+jcreech1@remote's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'remote'"
+and check to make sure that only the key(s) you wanted were added.
+
+[?2004hjcreech1@remote05:~/tmp$ ^M[K^M[Kgit configh[K[K[Kig --g;lo[K[K[Klobal --add safe.directory /home/umrigar/ git-repos/cs471.git
+[?2004l[?2004hjcreech1@remote05:~/tmp$ cd ~
+[?2004l[?2004hjcreech1@remote05:~$ git clone 
+[?2004lfatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+    --bundle-uri <uri>    a URI for downloading bundles before fetching from origin remote
+
+[?2004hjcreech1@remote05:~$ git clone jcreech1`[K@remote.cs.binghamton.edu:~umrigar/git-re pos[K[A[Kjcreech1@remote05:~$ git clone jcreech1@remote.cs.binghamton.edu:~umrigar/git-repos[K[A[Kjcreech1@remote05:~$ git clone jcreech1@remote.cs.binghamton.edu:~umrigar/git-repos[K[A[Kjcreech1@remote05:~$ git clone jcreech1@remote.cs.binghamton.edu:~umrigar/git-repos[Kjcreech1@remote05:~$ git clone jcreech1@remote.cs.binghamton.edu:~umrigar/git-repos[Kjcreech1@remote05:~$ git clone jcreech1@remote.cs.binghamton.edu:~umrigar/git-repos[Kjcreech1@remote05:~$ git clone jcreech1@remote.cs.binghamton.edu:~umrigar/git-repos[Kjcreech1@remote05:~$ git clone jcreech1@remote.cs.binghamton.edu:~umrigar/git-repos/cs471. git
+[?2004lCloning into 'cs471'...
+remote: Enumerating objects: 180, done.[K
+remote: Counting objects:   0% (1/180)[Kremote: Counting objects:   1% (2/180)[Kremote: Counting objects:   2% (4/180)[Kremote: Counting objects:   3% (6/180)[Kremote: Counting objects:   4% (8/180)[Kremote: Counting objects:   5% (9/180)[Kremote: Counting objects:   6% (11/180)[Kremote: Counting objects:   7% (13/180)[Kremote: Counting objects:   8% (15/180)[Kremote: Counting objects:   9% (17/180)[Kremote: Counting objects:  10% (18/180)[Kremote: Counting objects:  11% (20/180)[Kremote: Counting objects:  12% (22/180)[Kremote: Counting objects:  13% (24/180)[Kremote: Counting objects:  14% (26/180)[Kremote: Counting objects:  15% (27/180)[Kremote: Counting objects:  16% (29/180)[Kremote: Counting objects:  17% (31/180)[Kremote: Counting objects:  18% (33/180)[Kremote: Counting objects:  19% (35/180)[Kremote: Counting objects:  20% (36/180)[Kremote: Counting objects:  21% (38/180)[Kremote: Counting objects:  22% (40/180)[Kremote: Counting objects:  23% (42/180)[Kremote: Counting objects:  24% (44/180)[Kremote: Counting objects:  25% (45/180)[Kremote: Counting objects:  26% (47/180)[Kremote: Counting objects:  27% (49/180)[Kremote: Counting objects:  28% (51/180)[Kremote: Counting objects:  29% (53/180)[Kremote: Counting objects:  30% (54/180)[Kremote: Counting objects:  31% (56/180)[Kremote: Counting objects:  32% (58/180)[Kremote: Counting objects:  33% (60/180)[Kremote: Counting objects:  34% (62/180)[Kremote: Counting objects:  35% (63/180)[Kremote: Counting objects:  36% (65/180)[Kremote: Counting objects:  37% (67/180)[Kremote: Counting objects:  38% (69/180)[Kremote: Counting objects:  39% (71/180)[Kremote: Counting objects:  40% (72/180)[Kremote: Counting objects:  41% (74/180)[Kremote: Counting objects:  42% (76/180)[Kremote: Counting objects:  43% (78/180)[Kremote: Counting objects:  44% (80/180)[Kremote: Counting objects:  45% (81/180)[Kremote: Counting objects:  46% (83/180)[Kremote: Counting objects:  47% (85/180)[Kremote: Counting objects:  48% (87/180)[Kremote: Counting objects:  49% (89/180)[Kremote: Counting objects:  50% (90/180)[Kremote: Counting objects:  51% (92/180)[Kremote: Counting objects:  52% (94/180)[Kremote: Counting objects:  53% (96/180)[Kremote: Counting objects:  54% (98/180)[Kremote: Counting objects:  55% (99/180)[Kremote: Counting objects:  56% (101/180)[Kremote: Counting objects:  57% (103/180)[Kremote: Counting objects:  58% (105/180)[Kremote: Counting objects:  59% (107/180)[Kremote: Counting objects:  60% (108/180)[Kremote: Counting objects:  61% (110/180)[Kremote: Counting objects:  62% (112/180)[Kremote: Counting objects:  63% (114/180)[Kremote: Counting objects:  64% (116/180)[Kremote: Counting objects:  65% (117/180)[Kremote: Counting objects:  66% (119/180)[Kremote: Counting objects:  67% (121/180)[Kremote: Counting objects:  68% (123/180)[Kremote: Counting objects:  69% (125/180)[Kremote: Counting objects:  70% (126/180)[Kremote: Counting objects:  71% (128/180)[Kremote: Counting objects:  72% (130/180)[Kremote: Counting objects:  73% (132/180)[Kremote: Counting objects:  74% (134/180)[Kremote: Counting objects:  75% (135/180)[Kremote: Counting objects:  76% (137/180)[Kremote: Counting objects:  77% (139/180)[Kremote: Counting objects:  78% (141/180)[Kremote: Counting objects:  79% (143/180)[Kremote: Counting objects:  80% (144/180)[Kremote: Counting objects:  81% (146/180)[Kremote: Counting objects:  82% (148/180)[Kremote: Counting objects:  83% (150/180)[Kremote: Counting objects:  84% (152/180)[Kremote: Counting objects:  85% (153/180)[Kremote: Counting objects:  86% (155/180)[Kremote: Counting objects:  87% (157/180)[Kremote: Counting objects:  88% (159/180)[Kremote: Counting objects:  89% (161/180)[Kremote: Counting objects:  90% (162/180)[Kremote: Counting objects:  91% (164/180)[Kremote: Counting objects:  92% (166/180)[Kremote: Counting objects:  93% (168/180)[Kremote: Counting objects:  94% (170/180)[Kremote: Counting objects:  95% (171/180)[Kremote: Counting objects:  96% (173/180)[Kremote: Counting objects:  97% (175/180)[Kremote: Counting objects:  98% (177/180)[Kremote: Counting objects:  99% (179/180)[Kremote: Counting objects: 100% (180/180)[Kremote: Counting objects: 100% (180/180), done.[K
+remote: Compressing objects:   0% (1/155)[Kremote: Compressing objects:   1% (2/155)[Kremote: Compressing objects:   2% (4/155)[Kremote: Compressing objects:   3% (5/155)[Kremote: Compressing objects:   4% (7/155)[Kremote: Compressing objects:   5% (8/155)[Kremote: Compressing objects:   6% (10/155)[Kremote: Compressing objects:   7% (11/155)[Kremote: Compressing objects:   8% (13/155)[Kremote: Compressing objects:   9% (14/155)[Kremote: Compressing objects:  10% (16/155)[Kremote: Compressing objects:  11% (18/155)[Kremote: Compressing objects:  12% (19/155)[Kremote: Compressing objects:  13% (21/155)[Kremote: Compressing objects:  14% (22/155)[Kremote: Compressing objects:  15% (24/155)[Kremote: Compressing objects:  16% (25/155)[Kremote: Compressing objects:  17% (27/155)[Kremote: Compressing objects:  18% (28/155)[Kremote: Compressing objects:  19% (30/155)[Kremote: Compressing objects:  20% (31/155)[Kremote: Compressing objects:  21% (33/155)[Kremote: Compressing objects:  22% (35/155)[Kremote: Compressing objects:  23% (36/155)[Kremote: Compressing objects:  24% (38/155)[Kremote: Compressing objects:  25% (39/155)[Kremote: Compressing objects:  26% (41/155)[Kremote: Compressing objects:  27% (42/155)[Kremote: Compressing objects:  28% (44/155)[Kremote: Compressing objects:  29% (45/155)[Kremote: Compressing objects:  30% (47/155)[Kremote: Compressing objects:  31% (49/155)[Kremote: Compressing objects:  32% (50/155)[Kremote: Compressing objects:  33% (52/155)[Kremote: Compressing objects:  34% (53/155)[Kremote: Compressing objects:  35% (55/155)[Kremote: Compressing objects:  36% (56/155)[Kremote: Compressing objects:  37% (58/155)[Kremote: Compressing objects:  38% (59/155)[Kremote: Compressing objects:  39% (61/155)[Kremote: Compressing objects:  40% (62/155)[Kremote: Compressing objects:  41% (64/155)[Kremote: Compressing objects:  42% (66/155)[Kremote: Compressing objects:  43% (67/155)[Kremote: Compressing objects:  44% (69/155)[Kremote: Compressing objects:  45% (70/155)[Kremote: Compressing objects:  46% (72/155)[Kremote: Compressing objects:  47% (73/155)[Kremote: Compressing objects:  48% (75/155)[Kremote: Compressing objects:  49% (76/155)[Kremote: Compressing objects:  50% (78/155)[Kremote: Compressing objects:  51% (80/155)[Kremote: Compressing objects:  52% (81/155)[Kremote: Compressing objects:  53% (83/155)[Kremote: Compressing objects:  54% (84/155)[Kremote: Compressing objects:  55% (86/155)[Kremote: Compressing objects:  56% (87/155)[Kremote: Compressing objects:  57% (89/155)[Kremote: Compressing objects:  58% (90/155)[Kremote: Compressing objects:  59% (92/155)[Kremote: Compressing objects:  60% (93/155)[Kremote: Compressing objects:  61% (95/155)[Kremote: Compressing objects:  62% (97/155)[Kremote: Compressing objects:  63% (98/155)[Kremote: Compressing objects:  64% (100/155)[Kremote: Compressing objects:  65% (101/155)[Kremote: Compressing objects:  66% (103/155)[Kremote: Compressing objects:  67% (104/155)[Kremote: Compressing objects:  68% (106/155)[Kremote: Compressing objects:  69% (107/155)[Kremote: Compressing objects:  70% (109/155)[Kremote: Compressing objects:  71% (111/155)[Kremote: Compressing objects:  72% (112/155)[Kremote: Compressing objects:  73% (114/155)[Kremote: Compressing objects:  74% (115/155)[Kremote: Compressing objects:  75% (117/155)[Kremote: Compressing objects:  76% (118/155)[Kremote: Compressing objects:  77% (120/155)[Kremote: Compressing objects:  78% (121/155)[Kremote: Compressing objects:  79% (123/155)[Kremote: Compressing objects:  80% (124/155)[Kremote: Compressing objects:  81% (126/155)[Kremote: Compressing objects:  82% (128/155)[Kremote: Compressing objects:  83% (129/155)[Kremote: Compressing objects:  84% (131/155)[Kremote: Compressing objects:  85% (132/155)[Kremote: Compressing objects:  86% (134/155)[Kremote: Compressing objects:  87% (135/155)[Kremote: Compressing objects:  88% (137/155)[Kremote: Compressing objects:  89% (138/155)[Kremote: Compressing objects:  90% (140/155)[Kremote: Compressing objects:  91% (142/155)[Kremote: Compressing objects:  92% (143/155)[Kremote: Compressing objects:  93% (145/155)[Kremote: Compressing objects:  94% (146/155)[Kremote: Compressing objects:  95% (148/155)[Kremote: Compressing objects:  96% (149/155)[Kremote: Compressing objects:  97% (151/155)[Kremote: Compressing objects:  98% (152/155)[Kremote: Compressing objects:  99% (154/155)[Kremote: Compressing objects: 100% (155/155)[Kremote: Compressing objects: 100% (155/155), done.[K
+Receiving objects:   0% (1/180)Receiving objects:   1% (2/180)Receiving objects:   2% (4/180)Receiving objects:   3% (6/180)Receiving objects:   4% (8/180)Receiving objects:   5% (9/180)Receiving objects:   6% (11/180)Receiving objects:   7% (13/180)Receiving objects:   8% (15/180)Receiving objects:   9% (17/180)Receiving objects:  10% (18/180)Receiving objects:  11% (20/180)Receiving objects:  12% (22/180)Receiving objects:  13% (24/180)Receiving objects:  14% (26/180)Receiving objects:  15% (27/180)Receiving objects:  16% (29/180)Receiving objects:  17% (31/180)Receiving objects:  18% (33/180)Receiving objects:  19% (35/180)Receiving objects:  20% (36/180)Receiving objects:  21% (38/180)Receiving objects:  22% (40/180)Receiving objects:  23% (42/180)Receiving objects:  24% (44/180)Receiving objects:  25% (45/180)Receiving objects:  26% (47/180)Receiving objects:  27% (49/180)Receiving objects:  28% (51/180)Receiving objects:  29% (53/180)Receiving objects:  30% (54/180)Receiving objects:  31% (56/180)Receiving objects:  32% (58/180)Receiving objects:  33% (60/180)Receiving objects:  34% (62/180)Receiving objects:  35% (63/180)Receiving objects:  36% (65/180)Receiving objects:  37% (67/180)Receiving objects:  38% (69/180)Receiving objects:  39% (71/180)Receiving objects:  40% (72/180)Receiving objects:  41% (74/180)Receiving objects:  42% (76/180)Receiving objects:  43% (78/180)Receiving objects:  44% (80/180)Receiving objects:  45% (81/180)Receiving objects:  46% (83/180)Receiving objects:  47% (85/180)Receiving objects:  48% (87/180)Receiving objects:  49% (89/180)Receiving objects:  50% (90/180)Receiving objects:  51% (92/180)Receiving objects:  52% (94/180)Receiving objects:  53% (96/180)Receiving objects:  54% (98/180)Receiving objects:  55% (99/180)Receiving objects:  56% (101/180)Receiving objects:  57% (103/180)Receiving objects:  58% (105/180)Receiving objects:  59% (107/180)Receiving objects:  60% (108/180)Receiving objects:  61% (110/180)Receiving objects:  62% (112/180)Receiving objects:  63% (114/180)Receiving objects:  64% (116/180)Receiving objects:  65% (117/180)Receiving objects:  66% (119/180)Receiving objects:  67% (121/180)Receiving objects:  68% (123/180)Receiving objects:  69% (125/180)Receiving objects:  70% (126/180)Receiving objects:  71% (128/180)Receiving objects:  72% (130/180)Receiving objects:  73% (132/180)Receiving objects:  74% (134/180)Receiving objects:  75% (135/180)Receiving objects:  76% (137/180)Receiving objects:  77% (139/180)Receiving objects:  78% (141/180)Receiving objects:  79% (143/180)Receiving objects:  80% (144/180)Receiving objects:  81% (146/180)Receiving objects:  82% (148/180)Receiving objects:  83% (150/180)Receiving objects:  84% (152/180)remote: Total 180 (delta 49), reused 98 (delta 14), pack-reused 0[K
+Receiving objects:  85% (153/180)Receiving objects:  86% (155/180)Receiving objects:  87% (157/180)Receiving objects:  88% (159/180)Receiving objects:  89% (161/180)Receiving objects:  90% (162/180)Receiving objects:  91% (164/180)Receiving objects:  92% (166/180)Receiving objects:  93% (168/180)Receiving objects:  94% (170/180)Receiving objects:  95% (171/180)Receiving objects:  96% (173/180)Receiving objects:  97% (175/180)Receiving objects:  98% (177/180)Receiving objects:  99% (179/180)Receiving objects: 100% (180/180)Receiving objects: 100% (180/180), 286.83 KiB | 7.97 MiB/s, done.
+Resolving deltas:   0% (0/49)Resolving deltas:   2% (1/49)Resolving deltas:   4% (2/49)Resolving deltas:   6% (3/49)Resolving deltas:   8% (4/49)Resolving deltas:  10% (5/49)Resolving deltas:  12% (6/49)Resolving deltas:  14% (7/49)Resolving deltas:  16% (8/49)Resolving deltas:  18% (9/49)Resolving deltas:  20% (10/49)Resolving deltas:  22% (11/49)Resolving deltas:  24% (12/49)Resolving deltas:  26% (13/49)Resolving deltas:  28% (14/49)Resolving deltas:  32% (16/49)Resolving deltas:  34% (17/49)Resolving deltas:  36% (18/49)Resolving deltas:  38% (19/49)Resolving deltas:  40% (20/49)Resolving deltas:  42% (21/49)Resolving deltas:  44% (22/49)Resolving deltas:  46% (23/49)Resolving deltas:  48% (24/49)Resolving deltas:  51% (25/49)Resolving deltas:  53% (26/49)Resolving deltas:  55% (27/49)Resolving deltas:  57% (28/49)Resolving deltas:  59% (29/49)Resolving deltas:  61% (30/49)Resolving deltas:  63% (31/49)Resolving deltas:  65% (32/49)Resolving deltas:  67% (33/49)Resolving deltas:  69% (34/49)Resolving deltas:  71% (35/49)Resolving deltas:  73% (36/49)Resolving deltas:  75% (37/49)Resolving deltas:  77% (38/49)Resolving deltas:  79% (39/49)Resolving deltas:  81% (40/49)Resolving deltas:  83% (41/49)Resolving deltas:  85% (42/49)Resolving deltas:  87% (43/49)Resolving deltas:  89% (44/49)Resolving deltas:  91% (45/49)Resolving deltas:  93% (46/49)Resolving deltas:  95% (47/49)Resolving deltas:  97% (48/49)Resolving deltas: 100% (49/49)Resolving deltas: 100% (49/49), done.
+[?2004hjcreech1@remote05:~$ cd ~/cs471
+[?2004l[?2004hjcreech1@remote05:~/cs471$ git pull
+[?2004lAlready up to date.
+[?2004hjcreech1@remote05:~/cs471$ git log -5
+[?2004l[?1h=[33mcommit 2f480eef41ccc4a5c34cb705b68f40153cfee54e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Tue Jan 21 12:02:16 2025 -0500[m
+[m
+    lab0 fix[m
+[m
+[33mcommit a7ad69b5239bac09100a0904e41ccc09689d16ad[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Tue Jan 21 09:13:21 2025 -0500[m
+[m
+    syllabus update[m
+[m
+[33mcommit 917c301819ea1b78baf50a06a53812bbb2ed0bdb[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Jan 20 15:34:46 2025 -0500[m
+[m
+    updates after running thru lab[m
+[m
+[33mcommit a6c24acae6888f16c344c764f6628615deb70250[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Jan 20 10:35:56 2025 -0500[m
+[m
+    further cleanup[m
+:[K[K[K:[K[K:[K[K[7mNo next tag  (press RETURN)[27m[24;1H[K[K:[K[K:[K[K:[K[K[K:[K[K[m
+[33mcommit dc5087d4d10864df6ecaa714bc2dea183a323a0f[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Sat Jan 18 13:18:37 2025 -0500[m
+[m
+    wip[m
+[7m(END)[27m[K[K-[K[7mThere is no -3 option  (press RETURN)[27m[24;1H[K[K[7m(END)[27m[K[K-[K--[K  [K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[H[2J[H[33mcommit a7ad69b5239bac09100a0904e41ccc09689d16ad[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Tue Jan 21 09:13:21 2025 -0500[m
+[m
+    syllabus update[m
+[m
+[33mcommit 917c301819ea1b78baf50a06a53812bbb2ed0bdb[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Jan 20 15:34:46 2025 -0500[m
+[m
+    updates after running thru lab[m
+[m
+[33mcommit a6c24acae6888f16c344c764f6628615deb70250[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Jan 20 10:35:56 2025 -0500[m
+[m
+    further cleanup[m
+[m
+[33mcommit dc5087d4d10864df6ecaa714bc2dea183a323a0f[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Sat Jan 18 13:18:37 2025 -0500[m
+[m
+    wip[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[H[2J[H[33mcommit a7ad69b5239bac09100a0904e41ccc09689d16ad[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Tue Jan 21 09:13:21 2025 -0500[m
+[m
+    syllabus update[m
+[m
+[33mcommit 917c301819ea1b78baf50a06a53812bbb2ed0bdb[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Jan 20 15:34:46 2025 -0500[m
+[m
+    updates after running thru lab[m
+[m
+[33mcommit a6c24acae6888f16c344c764f6628615deb70250[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Jan 20 10:35:56 2025 -0500[m
+[m
+    further cleanup[m
+[m
+[33mcommit dc5087d4d10864df6ecaa714bc2dea183a323a0f[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Sat Jan 18 13:18:37 2025 -0500[m
+[m
+    wip[m
+[7m(END)[27m[K[K[?1l>[?2004hjcreech1@remote05:~/cs471$ git log -43[K[K3 -- labs/start-me-up/start-me-up.umt
+[?2004l[?1h=[33mcommit 2f480eef41ccc4a5c34cb705b68f40153cfee54e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Tue Jan 21 12:02:16 2025 -0500[m
+[m
+    lab0 fix[m
+[m
+[33mcommit 917c301819ea1b78baf50a06a53812bbb2ed0bdb[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Jan 20 15:34:46 2025 -0500[m
+[m
+    updates after running thru lab[m
+[m
+[33mcommit a6c24acae6888f16c344c764f6628615deb70250[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Jan 20 10:35:56 2025 -0500[m
+[m
+    further cleanup[m
+[K[?1l>[?2004hjcreech1@remote05:~/cs471$ git diff -r XXXXX -- la bs[K[K[Kbs/start-me-up/start-me-up.umt
+[?2004lfatal: bad revision 'XXXXX'
+[?2004hjcreech1@remote05:~/cs471$ git diff -r XXXXX -- labs/start-me-up/start-me-up.umt
+[?2004lfatal: bad revision 'XXXXX'
+[?2004hjcreech1@remote05:~/cs471$ git diff -r XXXXX -- labs/start-me-up/start-me-up.umt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat ~/.ssh/iud[K[Kd_rsa.pub
+[?2004lssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCheHgB1wryfybWnPuh018HTF9i0puYtfcTzrIKLMqelPUkR321Q1O8vejTVJloEJgUbXV25qHQHwOB2IP/H+CEOsCis/4sFSWKlgnjYxrKUuK7zWleHc0CXrkTH8A2CSDTBlQGa8CJ/aiBaATmuSj9Fv9Z+nAc5UfCWj4C/5v4V//RfbcjVObfCQ3lbxlWBaIOV1QEizdIYsJvEGXrstl8ZySF2/TuAvT2TNWZT6Dk55uVdreCGV4W+P8DC0BnzGt4eT/Q/spe9ftzBOScF2nuE1DOT2+4UVx2OSv4PNbMZtVWE5MWZ8HhiP7q7QV14YjLNqD7Sbyf1hRdzCVBPOtZgFPED600u0LjJNbtk54QuboMoFr1Sb377EniGIcQG0pniAUz0wDuGy8Lupn6Qcg/4JL33VkGjgwGkRPiW+a0dAVQUuRqzKbqWYAAB2Mu8JoZcJotMUzYjM+soSJDDpzPb4XKGgWtG6VyW5DqGR42Kf4setXLZMEFx0TSv/KtPHE= jcreech1@remote05
+[?2004hjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ [Kjcreech1@remote05:~/cs471$ cd ~
+[?2004l[?2004hjcreech1@remote05:~$ git clone ^M[Kgit@gu[Kithub.com:Jaden0319/i471.git
+[?2004lCloning into 'i471'...
+remote: Enumerating objects: 4, done.[K
+remote: Counting objects:  25% (1/4)[Kremote: Counting objects:  50% (2/4)[Kremote: Counting objects:  75% (3/4)[Kremote: Counting objects: 100% (4/4)[Kremote: Counting objects: 100% (4/4), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)[K
+Receiving objects:  25% (1/4)Receiving objects:  50% (2/4)Receiving objects:  75% (3/4)Receiving objects: 100% (4/4)Receiving objects: 100% (4/4), done.
+[?2004hjcreech1@remote05:~$ cdmn[K[K ~/i471
+[?2004l[?2004hjcreech1@remote05:~/i471$ ls -a
+[?2004l.  ..  .git  .gitignore  README.md
+[?2004hjcreech1@remote05:~/i471$ ls
+[?2004lREADME.md
+[?2004hjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [Kjcreech1@remote05:~/i471$ [?2004l
+exit
+
+Script done on 2025-01-21 13:03:27-05:00 [COMMAND_EXIT_CODE="0"]
