@@ -1,0 +1,172 @@
+Script started on 2025-01-28 15:21:53-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="40" LINES="18"]
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol$ ls
+[?2004llexer  LOG  README  regex
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol$ cd regex
+[?2004l[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/regex$ ls
+[?2004l data.txt      lex2.mjs~
+'#lex1.mjs#'   lex3.mjs
+ lex1.mjs      lex3.mjs~
+'#lex2.mjs#'   lexer.mjs
+ lex2.mjs      table-lexer.mjs
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/regex$ [7m./lexer.mjs lex2.mjs data.txt[27m[C[C[C[C[C[C[C[C./lexer.mjs lex2.mjs data.txt
+[?2004l{"kind":"INT","lexeme":"21"}
+{"kind":"INT","lexeme":"23"}
+{"kind":"CHAR","lexeme":"("}
+{"kind":"CHAR","lexeme":")"}
+{"kind":"ID","lexeme":"A34"}
+{"kind":"ID","lexeme":"_22"}
+{"kind":"ID","lexeme":"ID_44"}
+{"kind":"CHAR","lexeme":"/"}
+{"kind":"CHAR","lexeme":"/"}
+{"kind":"ID","lexeme":"asd"}
+{"kind":"ID","lexeme":"sdfs"}
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/regex$ [7m./lexer.mjs lex3.mjs data.txt[27m[C[C[C[C[C[C[C[C./lexer.mjs lex3.mjs data.txt
+[?2004l{"kind":"INT","lexeme":"21"}
+{"kind":"INT","lexeme":"23"}
+{"kind":"CHAR","lexeme":"("}
+{"kind":"CHAR","lexeme":")"}
+{"kind":"ID","lexeme":"A34"}
+{"kind":"ID","lexeme":"_22"}
+{"kind":"ID","lexeme":"ID_44"}
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/regex$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/regex$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/regex$ cd
+[?2004l[?2004hjcreech1@remote04:~$ cd [7m~/i471/submit/lab1-s[27m[7mo[27m[7ml/lexer[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~/i471/submit/lab1-sol/lexer
+[?2004l[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ ./lexer1.mjs data.txt
+[?2004l{"kind":"INT","lexeme":"21"}
+{"kind":"INT","lexeme":"23"}
+{"kind":"(","lexeme":"("}
+{"kind":")","lexeme":")"}
+{"kind":"A","lexeme":"A"}
+{"kind":"INT","lexeme":"34"}
+{"kind":"_","lexeme":"_"}
+{"kind":"INT","lexeme":"22"}
+{"kind":"I","lexeme":"I"}
+{"kind":"D","lexeme":"D"}
+{"kind":"_","lexeme":"_"}
+{"kind":"INT","lexeme":"44"}
+{"kind":"/","lexeme":"/"}
+{"kind":"/","lexeme":"/"}
+{"kind":"a","lexeme":"a"}
+{"kind":"s","lexeme":"s"}
+{"kind":"d","lexeme":"d"}
+{"kind":"s","lexeme":"s"}
+{"kind":"d","lexeme":"d"}
+{"kind":"f","lexeme":"f"}
+{"kind":"s","lexeme":"s"}
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ ./1[Klewxer[K[K[K[Kxer1.py data.txt
+[?2004l{"kind":"INT","lexeme":"21"}
+{"kind":"INT","lexeme":"23"}
+{"kind":"(","lexeme":"("}
+{"kind":")","lexeme":")"}
+{"kind":"A","lexeme":"A"}
+{"kind":"INT","lexeme":"34"}
+{"kind":"_","lexeme":"_"}
+{"kind":"INT","lexeme":"22"}
+{"kind":"I","lexeme":"I"}
+{"kind":"D","lexeme":"D"}
+{"kind":"_","lexeme":"_"}
+{"kind":"INT","lexeme":"44"}
+{"kind":"/","lexeme":"/"}
+{"kind":"/","lexeme":"/"}
+{"kind":"a","lexeme":"a"}
+{"kind":"s","lexeme":"s"}
+{"kind":"d","lexeme":"d"}
+{"kind":"s","lexeme":"s"}
+{"kind":"d","lexeme":"d"}
+{"kind":"f","lexeme":"f"}
+{"kind":"s","lexeme":"s"}
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ .[Kjava lexer1.java data.txt
+[?2004l{"kind":"INT","lexeme":"21"}
+{"kind":"INT","lexeme":"23"}
+{"kind":"(","lexeme":"("}
+{"kind":")","lexeme":")"}
+{"kind":"A","lexeme":"A"}
+{"kind":"INT","lexeme":"34"}
+{"kind":"_","lexeme":"_"}
+{"kind":"INT","lexeme":"22"}
+{"kind":"I","lexeme":"I"}
+{"kind":"D","lexeme":"D"}
+{"kind":"_","lexeme":"_"}
+{"kind":"INT","lexeme":"44"}
+{"kind":"/","lexeme":"/"}
+{"kind":"/","lexeme":"/"}
+{"kind":"a","lexeme":"a"}
+{"kind":"s","lexeme":"s"}
+{"kind":"d","lexeme":"d"}
+{"kind":"s","lexeme":"s"}
+{"kind":"d","lexeme":"d"}
+{"kind":"f","lexeme":"f"}
+{"kind":"s","lexeme":"s"}
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$  [K[A[K[A[K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[K[A[K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ java lexer1.java data.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K./lexer21[K2[K.ms[Kjs data.txt
+[?2004lbash: ./lexer2.mjs: Permission denied
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ ./lexer2.mjs data.txt[1P[1@1
+[?2004l{"kind":"INT","lexeme":"21"}
+{"kind":"INT","lexeme":"23"}
+{"kind":"(","lexeme":"("}
+{"kind":")","lexeme":")"}
+{"kind":"A","lexeme":"A"}
+{"kind":"INT","lexeme":"34"}
+{"kind":"_","lexeme":"_"}
+{"kind":"INT","lexeme":"22"}
+{"kind":"I","lexeme":"I"}
+{"kind":"D","lexeme":"D"}
+{"kind":"_","lexeme":"_"}
+{"kind":"INT","lexeme":"44"}
+{"kind":"/","lexeme":"/"}
+{"kind":"/","lexeme":"/"}
+{"kind":"a","lexeme":"a"}
+{"kind":"s","lexeme":"s"}
+{"kind":"d","lexeme":"d"}
+{"kind":"s","lexeme":"s"}
+{"kind":"d","lexeme":"d"}
+{"kind":"f","lexeme":"f"}
+{"kind":"s","lexeme":"s"}
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ ./run.sh data.txt
+[?2004l{"kind":"INT","lexeme":"21"}
+{"kind":"INT","lexeme":"23"}
+{"kind":"(","lexeme":"("}
+{"kind":")","lexeme":")"}
+{"kind":"ID","lexeme":"A34"}
+{"kind":"ID","lexeme":"_22"}
+{"kind":"ID","lexeme":"ID_44"}
+{"kind":"/","lexeme":"/"}
+{"kind":"/","lexeme":"/"}
+{"kind":"ID","lexeme":"asd"}
+{"kind":"ID","lexeme":"sdfs"}
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ ./run.sh data.txt
+[?2004l[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ ./run.sh data.txt
+[?2004l[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ ./run.sh data.txt
+[?2004l{"kind":"INT","lexeme":"21"}
+{"kind":"INT","lexeme":"23"}
+{"kind":"(","lexeme":"("}
+{"kind":")","lexeme":")"}
+{"kind":"ID","lexeme":"A34"}
+{"kind":"ID","lexeme":"_22"}
+{"kind":"ID","lexeme":"ID_44"}
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [K[A[Kjcreech1@remote04:~/i471/submit/lab1-sol/lexer$ [7mcd ~/i471/submit/labN-sol[27mcd ~/i471/submit/labN-sol[1P-sol1-sol
+[?2004l[?2004hjcreech1@remote04:~/i471/submit/lab1-sol$ ls
+[?2004llexer  LOG  README  regex
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol$ git sgt[K[Ktaus -s
+[?2004lgit: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol$ git staus -s[K[K[K[K[Ktus -s
+[?2004l [31mM[m README
+ [31mM[m lexer/run.sh
+[31m??[m ../../lab0-sol/
+[31m??[m LOG
+[31m??[m lexer/lexer2.mjs
+[31m??[m regex/#lex1.mjs#
+[31m??[m regex/#lex2.mjs#
+[31m??[m regex/lex2.mjs
+[31m??[m regex/lex2.mjs~
+[31m??[m regex/lex3.mjs
+[31m??[m regex/lex3.mjs~
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol$ ls
+[?2004llexer  LOG  README  regex
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol$ cd LOG
+[?2004lbash: cd: LOG: Not a directory
+[?2004hjcreech1@remote04:~/i471/submit/lab1-sol$ [?2004l
+exit
+
+Script done on 2025-01-28 16:07:16-05:00 [COMMAND_EXIT_CODE="1"]
