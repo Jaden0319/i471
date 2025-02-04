@@ -1,0 +1,56 @@
+[
+  {
+    "kids": [
+      {
+        "kids": [
+          {
+            "tag": "INT",
+            "value": 1
+          },
+          {
+            "tag": "INT",
+            "value": 2
+          }
+        ],
+        "tag": "+"
+      },
+      {
+        "tag": "INT",
+        "value": 3
+      }
+    ],
+    "tag": "-"
+  },
+  {
+    "kids": [
+      {
+        "kids": [
+          {
+            "kids": [
+              {
+                "tag": "INT",
+                "value": 2
+              }
+            ],
+            "tag": "-"
+          }
+        ],
+        "tag": "-"
+      },
+      {
+        "kids": [
+          {
+            "tag": "INT",
+            "value": 3
+          },
+          {
+            "tag": "INT",
+            "value": 4
+          }
+        ],
+        "tag": "-"
+      }
+    ],
+    "tag": "-"
+  }
+]

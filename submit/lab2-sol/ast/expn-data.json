@@ -1,0 +1,190 @@
+[
+  {
+    "kids": [
+      {
+        "tag": "INT",
+        "value": 9
+      },
+      {
+        "kids": [
+          {
+            "tag": "INT",
+            "value": 2
+          },
+          {
+            "tag": "INT",
+            "value": 3
+          }
+        ],
+        "tag": "**"
+      }
+    ],
+    "tag": "-"
+  },
+  {
+    "kids": [
+      {
+        "kids": [
+          {
+            "tag": "INT",
+            "value": 2
+          },
+          {
+            "tag": "INT",
+            "value": 2
+          }
+        ],
+        "tag": "**"
+      }
+    ],
+    "tag": "-"
+  },
+  {
+    "kids": [
+      {
+        "kids": [
+          {
+            "tag": "INT",
+            "value": 2
+          }
+        ],
+        "tag": "-"
+      },
+      {
+        "tag": "INT",
+        "value": 2
+      }
+    ],
+    "tag": "**"
+  },
+  {
+    "kids": [
+      {
+        "kids": [
+          {
+            "tag": "INT",
+            "value": 2
+          },
+          {
+            "kids": [
+              {
+                "tag": "INT",
+                "value": 2
+              },
+              {
+                "tag": "INT",
+                "value": 3
+              }
+            ],
+            "tag": "**"
+          }
+        ],
+        "tag": "**"
+      }
+    ],
+    "tag": "-"
+  },
+  {
+    "kids": [
+      {
+        "tag": "INT",
+        "value": 1
+      },
+      {
+        "kids": [
+          {
+            "tag": "INT",
+            "value": 2
+          },
+          {
+            "kids": [
+              {
+                "tag": "INT",
+                "value": 1
+              },
+              {
+                "tag": "INT",
+                "value": 5
+              }
+            ],
+            "tag": "+"
+          }
+        ],
+        "tag": "**"
+      }
+    ],
+    "tag": "+"
+  },
+  {
+    "kids": [
+      {
+        "tag": "INT",
+        "value": 1
+      },
+      {
+        "kids": [
+          {
+            "kids": [
+              {
+                "tag": "INT",
+                "value": 2
+              },
+              {
+                "kids": [
+                  {
+                    "tag": "INT",
+                    "value": 1
+                  },
+                  {
+                    "tag": "INT",
+                    "value": 5
+                  }
+                ],
+                "tag": "+"
+              }
+            ],
+            "tag": "**"
+          }
+        ],
+        "tag": "-"
+      }
+    ],
+    "tag": "+"
+  },
+  {
+    "kids": [
+      {
+        "tag": "INT",
+        "value": 1
+      },
+      {
+        "kids": [
+          {
+            "kids": [
+              {
+                "tag": "INT",
+                "value": 2
+              }
+            ],
+            "tag": "-"
+          },
+          {
+            "kids": [
+              {
+                "tag": "INT",
+                "value": 1
+              },
+              {
+                "tag": "INT",
+                "value": 5
+              }
+            ],
+            "tag": "+"
+          }
+        ],
+        "tag": "**"
+      }
+    ],
+    "tag": "+"
+  }
+]
