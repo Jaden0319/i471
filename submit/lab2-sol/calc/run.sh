@@ -13,5 +13,5 @@ fi
 # python3 ./calc2.py $1
 
 # uncomment following line for java
-# java ./calc2.java $1
+java ./calc2.java $1
 
