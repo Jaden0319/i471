@@ -77,4 +77,84 @@ Caused by: java.lang.ClassNotFoundException: calc2
 [?2004lusage: java calc1.java FILE_NAME
 [?2004hjcreech1@remote05:~/i471/submit/lab2-sol/calc$ java ./calc2.java exp[n[K[Kn-data.txt
 [?2004lexpecting ; at **[?2004hjcreech1@remote05:~/i471/submit/lab2-sol/calc$ [Kjcreech1@remote05:~/i471/submit/lab2-sol/calc$ java ./calc2.java expn-data.txt
-[?2004l
+[?2004lScript started on 2025-02-11 12:01:18-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="53" LINES="15"]
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ ls
+[?2004last  calc  LOG	README
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ cd ast
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ls
+[?2004last1.java  ast2.java  err1.txt	      expn-data.txt
+ast1.mjs   data.json  err2.txt	      run.sh
+ast1.py    data.txt   expn-data.json
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ code as t2.java
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [K[A[Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ls
+[?2004last1.java  ast2.java  err1.txt	      expn-data.txt
+ast1.mjs   data.json  err2.txt	      run.sh
+ast1.py    data.txt   expn-data.json
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ls
+[?2004last1.java  ast1.py    data.json  err1.txt  expn-data.json  run.sh
+ast1.mjs   ast2.java  data.txt	 err2.txt  expn-data.txt
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ op[K[Kcode run.sh
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ code run.shls[Kcode ast2.javals[Kcd ast[4Plsscript -a LOG[2Pcd lab2-solgit commit -m 'Started lab2'add .[K[25@cp -r ~/cs471/labs/lab2/lab2-sol[C[Cgit pull[Kcd ~/i471/submit[8Pgit pullcd ~/cs471[1P~/cs471[Klscd submitls[Kcd i471git clone git@github.com:Jaden0319/i471.git[1Ppull[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pmv i471 i471.bakcd ~[Kgit remote -vcommit -m 'rm lab2-sol'[14Pstatus -srm -r --cache lab2-sol[13Pstatus -srm -rf lab2-sol[7Pgit pullstatus -s[Krm -r --cache lab2-solpull[Kstatus -sls[Kgit pullls[Krm -r lab2-solls[K[K[K[7m./run.sh expn-data.txt | jq -S . >t[27m./run.sh expn-data.txt | jq -S . >t
+[?2004lexpecting ; at *
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ./run.sh expn-data.txt | jq -S . >t
+[?2004lexpecting ( at *
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ./run.sh expn-data.txt | jq -S . >t
+[?2004lexpecting ( at *
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ./run.sh expn-data.txt | jq -S . >t
+[?2004lexpecting ( at *
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ cd [7m~/i471/submit/lab2-sol[27m~/i471/submit/lab2-sol
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ ls
+[?2004last  calc  LOG	README
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ cd calc
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/calc$ code [K[K[K[K[Kls
+[?2004lcalc1.java  calc1.mjs  calc1.py  calc2.java  data.txt  expn-data.txt  run.sh
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/calc$ code calc2.java
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/calc$ ls[K[Kcd [7m~/i471/submit/lab2-sol[27m~/i471/submit/lab2-sol
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ ls
+[?2004last  calc  LOG	README
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ cd ast
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ls
+[?2004last1.java  ast1.py    data.json  err1.txt  expn-data.json  run.sh
+ast1.mjs   ast2.java  data.txt	 err2.txt  expn-data.txt   t
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ code expn-data.txt
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ code [7mexpn-data.json[27mexpn-data.json
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ 
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ code expn-data.json[1Ptxtls[Kcd ast[4Plscd ~/i471/submit/lab2-sol[10Pode calc2.javals[Kcd calcls[Kcd ~/i471/submit/lab2-sol./run.sh expn-data.txt | jq -S . >t
+[?2004lexpecting ( at l
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ./run.sh expn-data.txt | jq -S . >t
+[?2004lexpecting ( at l
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ./run.sh expn-data.txt | jq -S . >t
+[?2004lexpecting ( at l
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ./ast2.java [7mexpn-data.txt[27mexpn-data.txt
+[?2004lbash: ./ast2.java: Permission denied
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ./ast2.java expn-data.txtrun.sh expn-data.txt | jq -S . >t[10Past2.java expn-data.txt[1P[1P[1@j[C[1@a[1@v[C[1@a[1@ 
+[?2004lexpecting ( at l
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ java ast2.javs [K[Ka input.txt
+[?2004lException in thread "main" java.lang.RuntimeException: java.nio.file.NoSuchFileException: input.txt
+	at Calc.main(ast2.java:134)
+Caused by: java.nio.file.NoSuchFileException: input.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3289)
+	at java.base/java.nio.file.Files.readString(Files.java:3367)
+	at java.base/java.nio.file.Files.readString(Files.java:3326)
+	at Calc.main(ast2.java:123)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:421)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ls
+[?2004last1.java  ast1.py    data.json  err1.txt  expn-data.json  run.sh
+ast1.mjs   ast2.java  data.txt	 err2.txt  expn-data.txt   t
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ j[Klsjava ast2.java input.txt[C[K[K[K[K[K[K[K[K[Kdata[Ka.txt
+[?2004l[{"tag":"-","kids":[{"tag":"+","kids":[{"tag":"INT","value":1},{"tag":"INT","value":2}]},{"tag":"INT","value":3}]},{"tag":"-","kids":[{"tag":"-","kids":[{"tag":"-","kids":[{"tag":"INT","value":2}]}]},{"tag":"-","kids":[{"tag":"INT","value":3},{"tag":"INT","value":4}]}]}]
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ java ast2.java data.txt[K[K[K[K[K[K[K[Kexpn-dara[K[Kta.txt
+[?2004lexpecting ( at l
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [7m~/i471/submit/lab2-sol[27m~/i471/submit/lab2-sol
+[?2004lbash: /home2/jcreech1/i471/submit/lab2-sol: Is a directory
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ l[K[7m~/i471/submit/lab2-sol[27m~/i471/su

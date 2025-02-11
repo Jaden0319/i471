@@ -13,6 +13,6 @@ fi
 # python3 ./ast2.py $1
 
 # uncomment following line for java
-# java ./ast2.java $1
+ java ./ast2.java $1
 
 

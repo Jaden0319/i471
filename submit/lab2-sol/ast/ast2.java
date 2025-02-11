@@ -19,6 +19,9 @@ term
   : '-' term
   | factor
   ;
+expn
+  : factor ( '**' expn )?
+  ;
 factor
   : INT
   | '(' expr ')'
@@ -86,8 +89,18 @@ public class Calc {
       return new OpAst("-", term());
     }
     else {
-      return factor();
+      return expn();
     }
+  }
+
+  private Ast expn() {
+    var base = factor();
+    if (peek("**")) {
+        consume("**");
+        var exponent = expn(); // Right-associative exponentiation
+        return new OpAst("**", base, exponent);
+    }
+    return base;
   }
 
   private Ast factor() {
@@ -170,6 +183,7 @@ class Lexer {
   //the match to the start of the string
   private static final Pattern WS_RE = Pattern.compile("^\\s+");
   private static final Pattern INT_RE = Pattern.compile("^\\d+");
+  private static final Pattern DOUBLE_STAR_RE = Pattern.compile("^\\*\\*"); 
   private static final Pattern CHAR_RE = Pattern.compile("^.");
 
   /** Return lexeme which matches re in text; null if no match */
@@ -187,6 +201,9 @@ class Lexer {
       }
       else if ((lexeme = match(INT_RE, text)) != null) {
         tokens.add(new Token("INT", lexeme));
+      }
+      else if ((lexeme = match(DOUBLE_STAR_RE, text)) != null) {
+            tokens.add(new Token("**", lexeme));
       }
       else {
         lexeme = match(CHAR_RE, text);
