@@ -157,4 +157,76 @@ ast1.mjs   ast2.java  data.txt	 err2.txt  expn-data.txt   t
 [?2004lexpecting ( at l
 [?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [7m~/i471/submit/lab2-sol[27m~/i471/submit/lab2-sol
 [?2004lbash: /home2/jcreech1/i471/submit/lab2-sol: Is a directory
-[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ l[K[7m~/i471/submit/lab2-sol[27m~/i471/su
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ l[K[7m~/i471/submit/lab2-sol[27m~/i471/submit/lab2-sol
+[?2004lbash: /home2/jcreech1/i471/submit/lab2-sol: Is a directory
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ cd [7m~/i471/submit/lab2-sol[27m~/i471/submit/lab2-sol
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ ls'[K
+[?2004last  calc  LOG	README
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ cd calc
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/calc$ ls
+[?2004lcalc1.java  calc1.mjs  calc1.py  calc2.java  data.txt  expn-data.txt  run.sh
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/calc$ java calc2.java data.tx[K[Ktxt
+[?2004l[0,3]
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/calc$ java calc2.java data.txt[K[K[K[K[K[K[K[Kexpn-data.txt'[K
+[?2004l[1,-4,4,-8,-256,65,-63,65]
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/calc$ cdjava calc2.java expn-data.txt[5Pdata.txtls[Kcd calcls[Kcd ~/i471/submit/lab2-sol
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ cd ast
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ls
+[?2004last1.java  ast1.mjs  ast1.py  ast2.java  data.json  data.txt  err1.txt	err2.txt  expn-data.json  expn-data.txt  run.sh  t
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ 
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ code expn-data.txt
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ code expn-data.txtls[Kcd ast~/i471/submit/lab2-soljava calc2.java expn-data.txt[5Pdata.txtexpn-data.txt[4Pcd ~/i471/submit/lab2-solast[K[4Plscode expn-data.txt[Kcode expn-data.txtls[Kcd ast~/i471/submit/lab2-soljava calc2.java expn-data.txt[5Pdata.txtls[Kcd calcls[Kcd ~/i471/submit/lab2-sol[3P~/i471/submit/lab2-soljava ast2.java expn-data.txt[5Pdata.txtexpn-data.txt
+[?2004l[{"tag":"-","kids":[{"tag":"INT","value":9},{"tag":"**","kids":[{"tag":"INT","value":2},{"tag":"INT","value":3}]}]},{"tag":"-","kids":[{"tag":"**","kids":[{"tag":"INT","value":2},{"tag":"INT","value":2}]}]},{"tag":"**","kids":[{"tag":"-","kids":[{"tag":"INT","value":2}]},{"tag":"INT","value":2}]},{"tag":"-","kids":[{"tag":"**","kids":[{"tag":"INT","value":2},{"tag":"**","kids":[{"tag":"INT","value":2},{"tag":"INT","value":3}]}]}]},{"tag":"+","kids":[{"tag":"INT","value":1},{"tag":"**","kids":[{"tag":"INT","value":2},{"tag":"+","kids":[{"tag":"INT","value":1},{"tag":"INT","value":5}]}]}]},{"tag":"+","kids":[{"tag":"INT","value":1},{"tag":"-","kids":[{"tag":"**","kids":[{"tag":"INT","value":2},{"tag":"+","kids":[{"tag":"INT","value":1},{"tag":"INT","value":5}]}]}]}]},{"tag":"+","kids":[{"tag":"INT","value":1},{"tag":"**","kids":[{"tag":"-","kids":[{"tag":"INT","value":2}]},{"tag":"+","kids":[{"tag":"INT","value":1},{"tag":"INT","value":5}]}]}]}]
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ java ast2.java expn-data.txt[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7m./run.sh expn-data.txt | jq -S . >t[27m./run.sh expn-data.txt | jq -S . >t
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ls
+[?2004last1.java  ast1.py    data.json  err1.txt  expn-data.json  run.sh
+ast1.mjs   ast2.java  data.txt	 err2.txt  expn-data.txt   t
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ rm t
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$  [K[7m./run.sh expn-data.txt > /dev/null[27m./run.sh expn-data.txt > /dev/null
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ echo $?
+[?2004l0
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [7m./run.sh err1.txt > /dev/null 2>&1[27m./run.sh err1.txt > /dev/null 2>&1
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ./run.sh err1.txt > /dev/null 2>&1echo $?[K
+[?2004l1
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ echo $?./run.sh err1.txt > /dev/null 2>&1[1P[1@2
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ ./run.sh err2.txt > /dev/null 2>&1echo $?[K
+[?2004l1
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ [Kjcreech1@remote01:~/i471/submit/lab2-sol/ast$ cd [7m~/i471/submit/lab2-sol[27m~/i471/submit/lab2-sol
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ ls
+[?2004last  calc  LOG	README
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ git[K[K[Kcode README
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ git status -s
+[?2004l [31mM[m LOG
+ [31mM[m ast/ast2.java
+ [31mM[m ast/run.sh
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ git add [7mM LOG[27mM LOG[1P LOG[1PLOG
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ git add [7mast/ast2.java[27mast/ast2.java
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ gi [Kt add [7mast/run.sh[27mast/run.sh
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ git commit -m 'Completed lab2'
+[?2004l[main 0801fdc] Completed lab2
+ Committer: Jaden Creech <jcreech1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 100 insertions(+), 3 deletions(-)
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ git push
+[?2004lEnumerating objects: 15, done.
+Counting objects:   6% (1/15)Counting objects:  13% (2/15)Counting objects:  20% (3/15)Counting objects:  26% (4/15)Counting objects:  33% (5/15)Counting objects:  40% (6/15)Counting objects:  46% (7/15)Counting objects:  53% (8/15)Counting objects:  60% (9/15)Counting objects:  66% (10/15)Counting objects:  73% (11/15)Counting objects:  80% (12/15)Counting objects:  86% (13/15)Counting objects:  93% (14/15)Counting objects: 100% (15/15)Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 3.70 KiB | 947.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
+To github.com:Jaden0319/i471.git
+   f8bbd49..0801fdc  main -> main
+[?2004hjcreech1@remote01:~/i471/submit/lab2-sol$ [7mcd ~/i471/submit[27mcd ~/i471/submit
+[?2004l[?2004hjcreech1@remote01:~/i471/submit$ [7m~/cs471/bin/do-zip.sh labN-sol[27m~/cs471/bin/do-zip.sh labN-sol[1P-sol2-sol
+[?2004l  adding: lab2-sol/L
