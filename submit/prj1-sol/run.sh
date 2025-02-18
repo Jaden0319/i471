@@ -5,3 +5,6 @@
 
 
 
+
+python3 lexerParser.py
+
