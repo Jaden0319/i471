@@ -87,27 +87,43 @@ class Parser:
     def parse_array(self):
         self.lexer.consume('LBRACKET')
         elements = []
+        requires_trailing_comma = False  
         while self.lexer.peek()[0] != 'RBRACKET':
             elements.append(self.parse_literal())
+
             if self.lexer.peek()[0] == 'COMMA':
                 self.lexer.consume('COMMA')
-                if self.lexer.peek()[0] == 'RBRACKET':
-                    raise SyntaxError("Trailing comma in array.")
+                requires_trailing_comma = True  
+            else:
+                requires_trailing_comma = False  
+
+        if not requires_trailing_comma and elements:
+            raise SyntaxError("Array must end with a trailing comma before closing bracket.")
+
         self.lexer.consume('RBRACKET')
         return {"tag": "array", "val": elements}
+
 
     def parse_hash(self):
         self.lexer.consume('LBRACE')
         elements = []
+        requires_trailing_comma = False  
+
         while self.lexer.peek()[0] != 'RBRACE':
             key = self.parse_literal()
             self.lexer.consume('HASHROCKET')
             value = self.parse_literal()
             elements.append({"key": key, "val": value})
+
             if self.lexer.peek()[0] == 'COMMA':
                 self.lexer.consume('COMMA')
-                if self.lexer.peek()[0] == 'RBRACE':
-                    raise SyntaxError("Trailing comma in hash.")
+                requires_trailing_comma = True  
+            else:
+                requires_trailing_comma = False  
+
+        if not requires_trailing_comma and elements:
+            raise SyntaxError("Hash must end with a trailing comma before closing brace.")
+
         self.lexer.consume('RBRACE')
         return {"tag": "hash", "val": elements}
 
