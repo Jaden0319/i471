@@ -1,0 +1,623 @@
+Script started on 2025-02-18 12:06:36-05:00 [TERM="xterm-256color" TTY="/dev/pts/19" COLUMNS="89" LINES="6"]
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ ls
+[?2004llab3-sol.scm  lab3-tests.scm  LOG  README
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ code [K[K[K[K[Kgit status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   README[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mLOG[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [7mmodified:   README[27mmodified:   README[1PREADME[1PREADME[1P README[1P README[1P README[1P README[1P README[1P README[1P README[1P README[1P READMEg READMEi READMEt README[C READMEa READMEd READMEd README[C README
+[?2004l[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ git commit -m 'Updated Read [Kme'
+[?2004l[main 63e32f7] Updated Readme
+ Committer: Jaden Creech <jcreech1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ i[Kgit push
+[?2004lEnumerating objects: 15, done.
+Counting objects:   6% (1/15)Counting objects:  13% (2/15)Counting objects:  20% (3/15)Counting objects:  26% (4/15)Counting objects:  33% (5/15)Counting objects:  40% (6/15)Counting objects:  46% (7/15)Counting objects:  53% (8/15)Counting objects:  60% (9/15)Counting objects:  66% (10/15)Counting objects:  73% (11/15)Counting objects:  80% (12/15)Counting objects:  86% (13/15)Counting objects:  93% (14/15)Counting objects: 100% (15/15)Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects:   8% (1/12)Compressing objects:  16% (2/12)Compressing objects:  25% (3/12)Compressing objects:  33% (4/12)Compressing objects:  41% (5/12)Compressing objects:  50% (6/12)Compressing objects:  58% (7/12)Compressing objects:  66% (8/12)Compressing objects:  75% (9/12)Compressing objects:  83% (10/12)Compressing objects:  91% (11/12)Compressing objects: 100% (12/12)Compressing objects: 100% (12/12), done.
+Writing objects:   7% (1/13)Writing objects:  15% (2/13)Writing objects:  23% (3/13)Writing objects:  30% (4/13)Writing objects:  38% (5/13)Writing objects:  46% (6/13)Writing objects:  53% (7/13)Writing objects:  61% (8/13)Writing objects:  69% (9/13)Writing objects:  76% (10/13)Writing objects:  84% (11/13)Writing objects:  92% (12/13)Writing objects: 100% (13/13)Writing objects: 100% (13/13), 2.38 KiB | 304.00 KiB/s, done.
+Total 13 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 2 local objects.[K
+To github.com:Jaden0319/i471.git
+   161f18c..63e32f7  main -> main
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ racket
+[?2004lWelcome to Racket v8.12 [cs].
+> [C[C([31m([0m[C[31m*[0m[94m*[0m[94m [0m 1[32m1[0m[32m2[0m[32m3[0m[32m4[0m[32m.[0m[32m6[0m[32m0[0m[32m [0m ([31m([0m[C[31m+[0m[94m+[0m[94m [0m 1[32m1[0m[32m [0m ([31m([0m[C[31m/[0m[94m/[0m[94m [0m 5[32m5[0m[32m.[0m[32m0[0m[32m [0m 1[32m1[0m[32m0[0m[32m0[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+1296.33
+> [C[C([31m([0m[C[J> [31m([0m[C[C[C[31md[0m[94md[0m[94me[0m[94mf[0m[94mi[0m[94mn[0m[94me[0m[94m [0m ([31m([0m[C[31ms[0m[94ms[0m[94mi[0m[94mm[0m[94mp[0m[94ml[0m[94me[0m[94m-[0m[94mi[0m[94mn[0m[94mt[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m [0m b[94mb[0m[94ma[0m[94ml[0m[94ma[0m[94mn[0m[94mc[0m[94me[0m[94m [0m i[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m-[0m[94mr[0m[94ma[0m[94mt[0m[94me[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m [0m 
+    ([31m([0m[C[31m*[0m[94m*[0m[94m [0m b[94mb[0m[94ma[0m[94ml[0m[94ma[0m[94mn[0m[94mc[0m[94me[0m[94m [0m ([31m([0m[C[31m+[0m[94m+[0m[94m1[0m[32m+1[0m[32m [0m ([31m([0m[C[31m/[0m[94m/[0m[94m [0m i[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m-[0m[94mr[0m[94ma[0m[94mt[0m[94me[0m[94m [0m 1[32m1[0m[32m0[0m[32m0[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+    )[31m)[0m[A[A
+
+[C[C[C[K
+> [C[Cs[94ms[0m[94mi[0m[94mm[0m[94mp[0m[94ml[0m[94me[0m[94m-[0m[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m [0m 1[32m1[0m[32m2[0m[32m4[0m[32m5[0m[32m.[0m[32m6[0m[32m0[0m[32m [0m 5[32m5[0m[32m.[0m[32m0[0m[K
+[91msimple-interest: undefined;
+ cannot reference an identifier be[?7lf[?7hore its definition
+  in module: top-level
+ [,bt for context]
+[0m1245.6
+5.0
+> [C[C[J> simple-interest 1245.60 5.0[C[C[94msimple-interest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[91msimple-interest: undefined;
+ cannot reference an identifier be[?7lf[?7hore its definition
+  in module: top-level
+ [,bt for context]
+[0m1245.6
+5.0
+> [C[C[J> simple-interest 1245.60 5.0[C[C[94msimple-interest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> (define (simple-intrest balance interest-rate) 
+    (* balance (+1 (/ interest-rate 100)))
+    )[A[A[C[C[31m([94mdefine[C[31m([94msimple-intrest[Cbalance[Cinterest-rate[31m)
+([94m*[Cbalance[C[31m([32m+1[C[31m([94m/[Cinterest-rate[C[32m100[31m)))
+)[0m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C
+[K
+> [C[C[J> (define (simple-intrest balance interest-rate) 
+    (* balance (+1 (/ interest-rate 100)))
+    )[A[A[C[C[31m([94mdefine[C[31m([94msimple-intrest[Cbalance[Cinterest-rate[31m)
+([94m*[Cbalance[C[31m([32m+1[C[31m([94m/[Cinterest-rate[C[32m100[31m)))
+)[0m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-interest 1245.60 5.0[C[C[94msimple-interest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[91msimple-interest: undefined;
+ cannot reference an identifier be[?7lf[?7hore its definition
+  in module: top-level
+ [,bt for context]
+[0m1245.6
+5.0
+> [C[C[J> simple-interest 1245.60 5.0[C[C[94msimple-interest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> (define (simple-intrest balance interest-rate) 
+    (* balance (+1 (/ interest-rate 100)))
+    )[A[A[C[C[31m([94mdefine[C[31m([94msimple-intrest[Cbalance[Cinterest-rate[31m)
+([94m*[Cbalance[C[31m([32m+1[C[31m([94m/[Cinterest-rate[C[32m100[31m)))
+)[0m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-interest 1245.60 5.0[C[C[94msimple-interest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> (define (simple-intrest balance interest-rate) 
+    (* balance (+1 (/ interest-rate 100)))
+    )[A[A[C[C[31m([94mdefine[C[31m([94msimple-intrest[Cbalance[Cinterest-rate[31m)
+([94m*[Cbalance[C[31m([32m+1[C[31m([94m/[Cinterest-rate[C[32m100[31m)))
+)[0m[A[A
+
+[C[C[C[C[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J[K[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[A
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+> [C[C[J> (define (simple-intrest balance interest-rate) 
+    (* balance (+1 (/ interest-rate 100))))[A[C[C[31m([94mdefine[C[31m([94msimple-intrest[Cbalance[Cinterest-rate[31m)
+([94m*[Cbalance[C[31m([32m+1[C[31m([94m/[Cinterest-rate[C[32m100[31m))))[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-interest 1245.60 5.0[C[C[94msimple-interest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[91msimple-interest: undefined;
+ cannot reference an identifier be[?7lf[?7hore its definition
+  in module: top-level
+ [,bt for context]
+[0m1245.6
+5.0
+> [C[C[J> simple-interest 1245.60 5.0[C[C[94msimple-interest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[J
+  rest 1245.60 5.0rest 1245.60 5.0[94mrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[91msimple-int: undefined;
+ cannot reference an identifier before its definit[?7li[?7hon
+  in module: top-level
+ [,bt for context]
+[0m#<procedure:rest>
+1245.6
+5.0
+> [C[C[J> simple-int
+  rest 1245.60 5.0[A[C[C[94msimple-int
+rest[C[32m1245.60[C5.0[0m[A[C[C[C[C[C[C[C[C[C[C[J> simple-interest 1245.60 5.0[C[C[94msimple-interest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> (define (simple-intrest balance interest-rate) 
+    (* balance (+1 (/ interest-rate 100))))[A[C[C[31m([94mdefine[C[31m([94msimple-intrest[Cbalance[Cinterest-rate[31m)
+([94m*[Cbalance[C[31m([32m+1[C[31m([94m/[Cinterest-rate[C[32m100[31m))))[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[J> simple-interest 1245.60 5.0[C[C[94msimple-interest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[32m0[0m[K[32m0[0m[K[32m0[0m[K[32m0[0m[K[32m0[0m[K[32m0[0m[K[32m0[0m[K[32m0[0m[K[32m0[0m[K[32m0[0m[K[32m0[0m[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[K[94m0[0m[32m0[0m[C[K([31m([0m[C[31ms[0m[94ms[0m[94mi[0m[94mm[0m[94mp[0m[94ml[0m[94me[0m[94m-[0m[94mi[0m[94mn[0m[94mt[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m [0m 1[32m1[0m[32m2[0m[32m4[0m[32m5[0m[32m.[0m[32m6[0m[32m0[0m[32m [0m 5[32m5[0m[32m.[0m[32m0[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[91mapplication: not a procedure;
+ expected a procedure that can [?7lb[?7he applied to arguments
+  given: 1
+ [,bt for context]
+[0m> [C[C[J> (simple-intrest 1245.60 5.0)[C[C[31m([94msimple-intrest[C[32m1245.60[C5.0[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[91mapplication: not a procedure;
+ expected a procedure that can [?7lb[?7he applied to arguments
+  given: 1
+ [,bt for context]
+[0m> [C[C[J> (simple-intrest 1245.60 5.0)[C[C[31m([94msimple-intrest[C[32m1245.60[C5.0[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K([31m([0m[C[31md[0m[94md[0m[94me[0m[94mf[0m[94mi[0m[94mn[0m[94me[0m[94m [0m ([31m([0m[C[31ms[0m[94ms[0m[94mi[0m[94mm[0m[94mp[0m[94ml[0m[94me[0m[94m-[0m[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m [0m b[94mb[0m[94ma[0m[94ml[0m[94ma[0m[94mn[0m[94mc[0m[94me[0m[94m [0m i[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m-[0m[94mr[0m[94ma[0m[94mt[0m[94me[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+    ([31m([0m[C[31m*[0m[94m*[0m[94m [0m b[94mb[0m[94ma[0m[94ml[0m[94ma[0m[94mn[0m[94mc[0m[94me[0m[94m [0m ([31m([0m[C[31m+[0m[94m+[0m[94m [0m 1[32m1[0m[32m [0m ([31m([0m[C[31m/[0m[94m/[0m[94m [0m i[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m-[0m[94mr[0m[94ma[0m[94mt[0m[94me[0m[94m [0m 1[32m1[0m[32m0[0m[32m0[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+    
+    [K[K[A[C[C[J
+    ([31m([0m[C[31ms[0m[94ms[0m[94mi[0m[94mm[0m[94mp[0m[94ml[0m[94me[0m[94m-[0m[94mi[0m[94mn[0m[94mt[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m [0m 1[32m1[0m[32m2[0m[32m4[0m[32m5[0m[32m.[0m[32m6[0m[32m0[0m[32m [0m 5[32m5[0m[32m.[0m[32m0[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+    
+    [K[K[A[C[C[J[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[J[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J
+    
+    
+    [K[K[A[C[C[J[K[K[A[C[C[J[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J[K[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[A
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+> [C[C[J> (define (simple-interest balance interest-rate)
+    (* balance (+ 1 (/ interest-rate 100))))[A[C[C[31m([94mdefine[C[31m([94msimple-interest[Cbalance[Cinterest-rate[31m)
+([94m*[Cbalance[C[31m([94m+[C[32m1[C[31m([94m/[Cinterest-rate[C[32m100[31m))))[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[J> (simple-intrest 1245.60 5.0)[C[C[31m([94msimple-intrest[C[32m1245.60[C5.0[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[91mapplication: not a procedure;
+ expected a procedure that can [?7lb[?7he applied to arguments
+  given: 1
+ [,bt for context]
+[0m> [C[C[J> (simple-intrest 1245.60 5.0)[C[C[31m([94msimple-intrest[C[32m1245.60[C5.0[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m\[0m[91m\[0m[K[K[K[94msimple-intrest[0m [32m1245.60[0m [32m5.0[0m[J
+  simple-intrest 1245.60 5.0simple-intrest 1245.60 5.0[94msimple-intrest[C[32m1245.60[C5.0[0m[J
+  simple-intrest 1245.60 5.0simple-intrest 1245.60 5.0[94msimple-intrest[C[32m1245.60[C5.0[0m[J
+  simple-intrest 1245.60 5.0simple-intrest 1245.60 5.0[94msimple-intrest[C[32m1245.60[C5.0[0m[J
+  simple-intrest 1245.60 5.0simple-intrest 1245.60 5.0[94msimple-intrest[C[32m1245.60[C5.0[0m[J
+  simple-intrest 1245.60 5.0simple-intrest 1245.60 5.0[94msimple-intrest[C[32m1245.60[C5.0[0m[A[J[94msimple-intrest[0m [32m1245.60[0m [32m5.0[0m[A[J[94msimple-intrest[0m [32m1245.60[0m [32m5.0[0m[A[J[94msimple-intrest[0m [32m1245.60[0m [32m5.0[0m[A[J[94msimple-intrest[0m [32m1245.60[0m [32m5.0[0m[A[J[94msimple-intrest[0m [32m1245.60[0m [32m5.0[0m[J
+  simple-intrest 1245.60 5.0simple-intrest 1245.60 5.0[94msimple-intrest[C[32m1245.60[C5.0[0m[A[J[94msimple-intrest[0m [32m1245.60[0m [32m5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-intrest>
+1245.6
+5.0
+> [C[C[J> [C[C[91muser break [,bt for context]
+[0m> [C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-intrest>
+1245.6
+5.0
+> [C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-intrest>
+1245.6
+5.0
+> [C[C    ([31m([0m[C[31m*[0m[94m*[0m[94m [0m 1[32m1[0m[32m2[0m[32m3[0m[32m4[0m[32m.[0m[32m6[0m[32m0[0m[32m [0m ([31m([0m[C[31m+[0m[94m+[0m[94m [0m 1[32m1[0m[32m [0m ([31m([0m[C[31m/[0m[94m/[0m[94m [0m 5[32m5[0m[32m.[0m[32m0[0m[32m [0m 1[32m1[0m[32m0[0m[32m0[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+1296.33
+> [C[C[J>     (* 1234.60 (+ 1 (/ 5.0 100)))[C[C[C[C[C[C[31m([94m*[C[32m1234.60[C[31m([94m+[C[32m1[C[31m([94m/[C[32m5.0[C100[31m)))[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-intrest>
+1245.6
+5.0
+> [C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-intrest>
+1245.6
+5.0
+> [C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-intrest>
+1245.6
+5.0
+> [C[C([31m([0m[C[31md[0m[94md[0m[94me[0m[94mf[0m[94mi[0m[94mn[0m[94me[0m[94m [0m ([31m([0m[C[31ms[0m[94ms[0m[94mi[0m[94mm[0m[94mp[0m[94ml[0m[94me[0m[94m-[0m[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m [0m 1[32m1[0m[32m2[0m[32m3[0m[K[K[Kb[94mb[0m[94ma[0m[94ml[0m[94ma[0m[94mn[0m[94mc[0m[94me[0m[94m [0m i[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mr[0m[K[K[94ms[0m[94mt[0m[94m-[0m[94mr[0m[94ma[0m[94mt[0m[94me[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m [0m ([31m([0m[C[31m*[0m[94m*[0m[94m [0m 1[32m1[0m[32m2[0m[32m3[0m[32m4[0m[32m.[0m[32m6[0m[32m0[0m[32m [0m ([31m([0m[C[31m+[0m[94m+[0m[94m [0m 1[32m1[0m[32m [0m ([31m([0m[C[31m/[0m[94m/[0m[94m [0m 5[32m5[0m[32m.[0m[32m0[0m[32m [0m 1[32m1[0m[32m0[0m[32m0[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0mi [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94mi[0m[94mn[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94mt[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94me[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94mr[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94me[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94ms[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94mt[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94m-[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94mr[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94ma[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94mt[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94me[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[C[C[C[C[C[C[C[C[C[C[C[C[K [32m100[31m)))[0m[K [32m100[31m)))[0m[K [32m100[31m)))[0m[K [32m100[31m)))[0m[94mi[0m [32m100[31m)))[0m[94mn[0m [32m100[31m)))[0m[94mt[0m [32m100[31m)))[0m[94me[0m [32m100[31m)))[0m[94mr[0m [32m100[31m)))[0m[94me[0m [32m100[31m)))[0m[94ms[0m [32m100[31m)))[0m[J[94mt[0m [32m100[31m))[?7l)[?7h
+[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[94m-[0m [32m100[31m)[?7l)[?7h
+)[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[94mr[0m [32m100[31m[?7l)[?7h
+))[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[94ma[0m [32m10[?7l0[?7h
+[31m)))[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[94mt[0m [32m1[?7l0[?7h
+0[31m)))[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[94me[0m [32m[?7l1[?7h
+00[31m)))[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> [31m([94mdefine[0m [31m([94msimple-interest[0m [94mbalance[0m [94minterest-rate[31m)[0m [31m([94m*[0m [94minterest-rate[0m [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0mb [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[94mb[0m[94ma[0m [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[94ml[0m [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[94ma[0m [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[94mn[0m [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[94mc[0m [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[94me[0m [31m([94m+[0m [32m1[0m [31m([94m/interest-rate[0m [32m100[31m)))[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+    )[31m)[0m[A
+[C[C[C[K
+> [C[C[J> (define (simple-interest balance interest-rate) (* balance (+ 1 (/interest-rate 100)))
+    )[A[C[C[31m([94mdefine[C[31m([94msimple-interest[Cbalance[Cinterest-rate[31m)[C([94m*[Cbalance[C[31m([94m+[C[32m1[C[31m([94m/interest-rate[C[32m100[31m)))
+)[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-intrest>
+1245.6
+5.0
+> [C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-intrest>
+1245.6
+5.0
+> [C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> (define (simple-interest balance interest-rate) (* balance (+ 1 (/interest-rate 100)))
+    )[A[C[C[31m([94mdefine[C[31m([94msimple-interest[Cbalance[Cinterest-rate[31m)[C([94m*[Cbalance[C[31m([94m+[C[32m1[C[31m([94m/interest-rate[C[32m100[31m)))
+)[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-intrest>
+1245.6
+5.0
+> [C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> (define (simple-interest balance interest-rate) (* balance (+ 1 (/interest-rate 100)))
+    )[A[C[C[31m([94mdefine[C[31m([94msimple-interest[Cbalance[Cinterest-rate[31m)[C([94m*[Cbalance[C[31m([94m+[C[32m1[C[31m([94m/interest-rate[C[32m100[31m)))
+)[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J>     (* 1234.60 (+ 1 (/ 5.0 100)))[C[C[C[C[C[C[31m([94m*[C[32m1234.60[C[31m([94m+[C[32m1[C[31m([94m/[C[32m5.0[C100[31m)))[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[94merest[0m [32m1245.60[0m [32m5.0[0m[J
+  rest 1245.60 5.0rest 1245.60 5.0[94mrest[C[32m1245.60[C5.0[0m[A[J> [94msimple-inte[0m
+  [94mrest[0m [32m1245.60[0m [32m5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[91msimple-inte: undefined;
+ cannot reference an identifier before its definition
+  in module: top-level
+ [,bt for context]
+[0m#<procedure:rest>
+1245.6
+5.0
+> [C[C[J> simple-inte
+  rest 1245.60 5.0[A[C[C[94msimple-inte
+rest[C[32m1245.60[C5.0[0m[A[C[C[C[C[C[C[C[C[C[C[C[94mr[0m[94me[0m[94ms[0m[94mt[0m[J
+  
+  [94mrest[0m [32m1245.60[0m [32m5.0[0m[A
+[A[J[94mrest[0m [32m1245.60[0m [32m5.0[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kc[94mc[0m[94ml[0m[94me[0m[94ma[0m[94mr[0m[K
+[91mclear: undefined;
+ cannot reference an identifier before its definition
+  in module: top-level
+ [,bt for context]
+[0m> [C[Cc[94mc[0m[94ml[0m[94me[0m[94ma[0m[94mn[0m[K
+[91mclean: undefined;
+ cannot reference an identifier before its definition
+  in module: top-level
+ [,bt for context]
+[0m> [C[C[91muser break [,bt for context]
+[0m> [C[C[91muser break [,bt for context]
+[0m> [C[C[J> [C[C[J> clean[C[C[94mclean[0m[C[C[C[C[C[J> clear[C[C[94mclear[0m[C[C[C[C[C[J> simple-inte
+  rest 1245.60 5.0[A[C[C[94msimple-inte
+rest[C[32m1245.60[C5.0[0m[A[C[C[C[C[C[C[C[C[C[C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> (define (simple-interest balance interest-rate) (* balance (+ 1 (/interest-rate 100)))
+    )[A[C[C[31m([94mdefine[C[31m([94msimple-interest[Cbalance[Cinterest-rate[31m)[C([94m*[Cbalance[C[31m([94m+[C[32m1[C[31m([94m/interest-rate[C[32m100[31m)))
+)[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> (define (simple-interest balance interest-rate) (* balance (+ 1 (/interest-rate 100)))
+    )[A[C[C[31m([94mdefine[C[31m([94msimple-interest[Cbalance[Cinterest-rate[31m)[C([94m*[Cbalance[C[31m([94m+[C[32m1[C[31m([94m/interest-rate[C[32m100[31m)))
+)[0m[A
+[C[C[C[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J[31m_[0m[94m_[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+> [C[C[J> (define (simple-interest balance interest-rate) (* balance (+ 1 (/interest-rate 100))))[C[C[31m([94mdefine[C[31m([94msimple-interest[Cbalance[Cinterest-rate[31m)[C([94m*[Cbalance[C[31m([94m+[C[32m1[C[31m([94m/interest-rate[C[32m100[31m))))[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> clean[C[C[94mclean[0m[C[C[C[C[C[J> clear[C[C[94mclear[0m[C[C[C[C[C[J> simple-inte
+  rest 1245.60 5.0[A[C[C[94msimple-inte
+rest[C[32m1245.60[C5.0[0m[A[C[C[C[C[C[C[C[C[C[C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-intrest>
+1245.6
+5.0
+> [C[C[J> simple-intrest 1245.60 5.0[C[C[94msimple-intrest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[94merest[0m [32m1245.60[0m [32m5.0[0m[J
+  rest 1245.60 5.0rest 1245.60 5.0[94mrest[C[32m1245.60[C5.0[0m[J
+  rest 1245.60 5.0rest 1245.60 5.0[94mrest[C[32m1245.60[C5.0[0m[A[J[94mrest[0m [32m1245.60[0m [32m5.0[0m[A[C[C[C[C[C[C[C[C[C[C[C[J[94mrest[0m [32m1245.60[0m [32m5.0[0m[K[94mrest[0m [32m1245.60[0m [32m5.0[0m[94merest[0m [32m1245.60[0m [32m5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-interest>
+1245.6
+5.0
+> [C[C[J> simple-interest 1245.60 5.0[C[C[94msimple-interest[C[32m1245.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[32m5.60[0m [32m5.0[0m[32m35.60[0m [32m5.0[0m[C[K[32m.60[0m [32m5.0[0m[32m4.60[0m [32m5.0[0m[J
+  .60 5.0.60 5.0[32m.60[C5.0[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J[32m.60[0m [32m5.0[0m[C[C[C[C[C[C[C[K
+#<procedure:simple-interest>
+1234.6
+5.0
+> [C[C[J> simple-interest 1234.60 5.0[C[C[94msimple-interest[C[32m1234.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-interest>
+1234.6
+5.0
+> [C[C[J> simple-interest 1234.60 5.0[C[C[94msimple-interest[C[32m1234.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> [94msimple-interest[0m [32m1234.60[0m [32m5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[32m.[0m[32m0[0m[K
+#<procedure:simple-interest>
+1234.6
+5.0
+> [C[C[J> simple-interest 1234.60 5.0[C[C[94msimple-interest[C[32m1234.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-interest>
+1234.6
+5.0
+> [C[C([31m([0m[C[31md[0m[94md[0m[94me[0m[94mf[0m[94mi[0m[94mn[0m[94me[0m[94m [0m ([31m([0m[C[31ms[0m[94ms[0m[94mi[0m[94mm[0m[94mp[0m[94ml[0m[94me[0m[94m-[0m[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m [0m b[94mb[0m[94ma[0m[94ml[0m[94ma[0m[94mn[0m[94mc[0m[94me[0m[94m [0m i[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m-[0m[94mr[0m[94ma[0m[94mt[0m[94me[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m [0m ([31m([0m[C[31m*[0m[94m*[0m[94m [0m b[94mb[0m[94ma[0m[94ml[0m[94ma[0m[94mn[0m[94mc[0m[94me[0m[94m [0m ([31m([0m[C[31m+[0m[94m+[0m[94m [0m 1[32m1[0m[32m [0m ([31m([0m[C[31m/[0m[94m/[0m[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m-[0m[94mr[0m[94ma[0m[94mt[0m[94me[0m[94m [0m 1[32m1[0m[32m0[0m[32m0[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m [94m/interest-rate[0m [32m100[31m)))[0m [K[94m/interest-rate[0m [32m100[31m)))[0m[C[94m interest-rate[0m [32m100[31m)))[0m [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+    )[31m)[0m[A
+[C[C[C[K
+> [C[C[J> (define (simple-interest balance interest-rate) (* balance (+ 1 (/ interest-rate 100)))
+    )[A[C[C[31m([94mdefine[C[31m([94msimple-interest[Cbalance[Cinterest-rate[31m)[C([94m*[Cbalance[C[31m([94m+[C[32m1[C[31m([94m/[Cinterest-rate[C[32m100[31m)))
+)[0m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-interest 1234.60 5.0[C[C[94msimple-interest[C[32m1234.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-interest>
+1234.6
+5.0
+> [C[C[J> simple-interest 1234.60 5.0[C[C[94msimple-interest[C[32m1234.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-interest>
+1234.6
+5.0
+> [C[C ([31m([0m[C[31md[0m[94md[0m[94me[0m[94mf[0m[94mi[0m[94mn[0m[94me[0m[94m [0m ([31m([0m[C[31ms[0m[94ms[0m[94mi[0m[94mm[0m[94mp[0m[94ml[0m[94me[0m[94m-[0m[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m [0m b[94mb[0m[94ma[0m[94ml[0m[94ma[0m[94mn[0m[94mc[0m[94me[0m[94m [0m i[94mi[0m[94mn[0m[94mt[0m[94me[0m[94mr[0m[94me[0m[94ms[0m[94mt[0m[94m-[0m[94mr[0m[94ma[0m[94mt[0m[94me[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+        ..[94m..[0m[94m.[0m
+      )[31m)[0m[A[A
+
+[C[C[C[C[A[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[K[K.[K([31m([0m
+[A[C[C[C[31m*[0m[94m*[0m[94m [0m 1[32m1[0m[32m2[0m[32m3[0m[32m4[0m[32m.[0m[32m6[0m[32m0[0m[32m [0m ([31m([0m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m+[0m[94m+[0m[94m [0m 1[32m1[0m[32m [0m ([31m([0m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m/[0m[94m/[0m[94m [0m 5[32m5[0m[32m.[0m[32m0[0m[32m [0m 1[32m1[0m[32m0[0m[32m0[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[K [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0mb [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94mb[0m[94ma[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94ml[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94ma[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94mn[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94mc[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[94me[0m [31m([94m+[0m [32m1[0m [31m([94m/[0m [32m5.0[0m [32m100[31m)))[0m[C[C[C[C[C[C[C[C[C[C[C[C[K [32m100[31m)))[0m[K [32m100[31m)))[0m[K [32m100[31m)))[0mi [32m100[31m)))[0m[94mi[0m[94mn[0m [32m100[31m)))[0m[94mt[0m [32m100[31m)))[0m[94me[0m [32m100[31m)))[0m[94mr[0m [32m100[31m)))[0m[94me[0m [32m100[31m)))[0m[94ms[0m [32m100[31m)))[0m[94mt[0m [32m100[31m)))[0m[94m-[0m [32m100[31m)))[0m[94mr[0m [32m100[31m)))[0m[94ma[0m [32m100[31m)))[0m[94mt[0m [32m100[31m)))[0m[94mr[0m [32m100[31m)))[0m[K [32m100[31m)))[0m[94me[0m [32m100[31m)))[0m[C[C[C[C[C[C[C
+[C[C[C[C[C[K
+> [C[C[J>  (define (simple-interest balance interest-rate)
+        (* balance (+ 1 (/ interest-rate 100)))
+      )[A[A[C[C[C[31m([94mdefine[C[31m([94msimple-interest[Cbalance[Cinterest-rate[31m)
+([94m*[Cbalance[C[31m([94m+[C[32m1[C[31m([94m/[Cinterest-rate[C[32m100[31m)))
+)[0m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> simple-interest 1234.60 5.0[C[C[94msimple-interest[C[32m1234.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+#<procedure:simple-interest>
+1234.6
+5.0
+> [C[C[J> simple-interest 1234.60 5.0[C[C[94msimple-interest[C[32m1234.60[C5.0[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32m)[0m[31m)[0m[C[94m(simple-interest[0m [32m1234.60[0m [32m5.0[31m)[0m[31m([0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J
+  simple-interest 1234.60 5.0) simple-interest 1234.60 5.0)[94msimple-interest[C[32m1234.60[C5.0[31m)[0m[K[94msimple-interest[0m [32m1234.60[0m [32m5.0[31m)[0m[A[C[J[94msimple-interest[0m [32m1234.60[0m [32m5.0[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+1296.33
+> [C[C[J> [C[Cl[94ml[0m[94ms[0m[K
+[91mls: undefined;
+ cannot reference an identifier before its definition
+  in module: top-level
+ [,bt for conte[?7lx[?7ht]
+[0m> [C[C[91muser break [,bt for context]
+[0m> [C[C,b[94mb[0m[94mt[0m[K
+[91muser break
+  context...:
+   /usr/share/racket/pkgs/expeditor-lib/main.rkt:234:2: dispatch
+   /usr/share/ra[?7lc[?7hket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1692:13
+   /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1776:2: reader-loop
+   /usr/share/racket/collects/racket/repl.rkt:11:26
+[0m> [C[C[J> [C[C[91muser break [,bt for context]
+[0m> [C[C[J> [C[Cc[94mc[0m[94md[0m[K
+[91mcd: undefined;
+ cannot reference an identifier before its definition
+  in module: top-level
+ [,bt for conte[?7lx[?7ht]
+[0m> [C[Cç[94mç[0m[K[J> [C[C([31m([0m[C[31me[0m[94me[0m[94mx[0m[94mi[0m[94mt[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[K
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ ls
+[?2004llab3-sol.scm  lab3-tests.scm  LOG  README
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ clear
+[?2004l[H[2J[3J[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004l[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ cd
+[?2004l[?2004hjcreech1@remote05:~$ ls
+[?2004l'2 bit decoder.circ'			    num1lab8.s
+'2-input MUX .circ'			    num1.s
+ bool					    num1.s~
+ bool.c					   '#num2.s#'
+ bool.c~				    Pictures
+ Creech_Lab1				    prac.cpp
+ Creech_lab1.tar.gz			    printbits
+ Creech_Lab1.tar.gz			    printbits.c
+ CS220					    printbits.c~
+ cs240					    Public
+ CS320					    sum
+ CS350					    sum2.c
+ CS375					    sum2.s
+ cs471					   '#sum.c#'
+ Desktop				    sum.c
+ Documents				    sum.c~
+ Downloads				    Templates
+ hello					    test
+'#hello.c#'				    test2.c
+ hello.c				    test2.c~
+ hello.c~				    test3
+ i471					    test.c
+ i471.bak				    tmp
+ Images.FileTypeIcons.icnGeneric50x50.png   Videos
+ LOG					    vscode-cpptools
+ logisimProjectOne.circ			   'Y = !A!B!C!D + AD + AC.circ'
+ Music					   'Y = A!D + BCD.circ'
+ num1.c
+[?2004hjcreech1@remote05:~$ lscdracket lab3-tests.scmclear[K[3Plsracketgit pushcommit -m 'Updated Readme'[15Padd  README[5Pstatusls[Kgit pushcommit -m 'changes' [6Prestore run.sh[8Pstatusadd lexerParser.py[9Pstatus -s$extras/do-tests.sh ./run.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K$extras/do-tests.sh ./run.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K$extras/do-tests.sh ./run.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K$extras/do-tests.sh ./run.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K$extras/do-tests.sh ./run.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K$extras/do-tests.sh ./run.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K$extras/do-tests.sh ./run.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K$extras/do-tests.sh ./run.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K$extras/do-tests.sh ./run.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K$extras/do-tests.sh ./run.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K$extras/do-tests.sh ./run.sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ~/i471
+[?2004l[?2004hjcreech1@remote05:~/i471$ ls
+[?2004lREADME.md  submit
+[?2004hjcreech1@remote05:~/i471$ cd sum[Kbmit
+[?2004l[?2004hjcreech1@remote05:~/i471/submit$ ls
+[?2004llab0-sol  lab1-sol  lab2-sol  lab2-sol.zip  lab3-sol  prj1-sol
+[?2004hjcreech1@remote05:~/i471/submit$ cd [7mlab3-sol[27mlab3-sol
+[?2004l[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ ls
+[?2004llab3-sol.scm  lab3-tests.scm  LOG  README
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ cd [K[K[Klscd lab3-solls[Kcd submitls[Kcd ~/i471ls[Kcdracket lab3-tests.scmclear[Kracket lab3-tests.scm
+[?2004lokay: '(round-n (simple-interest 1000.0 5.0)): has expected value 1050.0
+okay: '(round-n (simple-interest 1000.0 3.56)): has expected value 1035.6
+okay: '(round-n (simple-interest 1234.6 5.0)): has expected value 1296.33
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ ls
+[?2004llab3-sol.scm  lab3-tests.scm  LOG  README
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ lsracket lab3-tests.scmls[Kracket lab3-tests.scm
+[?2004llab3-sol.scm:24:0: read-syntax: unexpected `)`
+  context...:
+   /usr/share/racket/collects/syntax/module-reader.rkt:214:17: body
+   /usr/share/racket/collects/syntax/module-reader.rkt:211:2: wrap-internal
+   /usr/share/racket/collects/racket/../syntax/module-reader.rkt:76:9: wrap-internal/wrapper
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004llab3-sol.scm:24:0: read-syntax: unexpected `)`
+  context...:
+   /usr/share/racket/collects/syntax/module-reader.rkt:214:17: body
+   /usr/share/racket/collects/syntax/module-reader.rkt:211:2: wrap-internal
+   /usr/share/racket/collects/racket/../syntax/module-reader.rkt:76:9: wrap-internal/wrapper
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004llab3-sol.scm:23:5: principal: unbound identifier
+  in: principal
+  location...:
+   lab3-sol.scm:23:5
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004lokay: '(round-n (simple-interest 1000.0 5.0)): has expected value 1050.0
+okay: '(round-n (simple-interest 1000.0 3.56)): has expected value 1035.6
+okay: '(round-n (simple-interest 1234.6 5.0)): has expected value 1296.33
+okay: '(round-n (compound-interest 1000.0 5 1 5) 2): has expected value 1276.28
+okay: '(round-n (compound-interest 1000.0 5 12 5) 2): has expected value 1283.36
+okay: '(round-n (compound-interest 1000.0 5 365 5) 2): has expected value 1284.0
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004llab3-sol.scm:32:0: read-syntax: unexpected `)`
+  context...:
+   /usr/share/racket/collects/syntax/module-reader.rkt:214:17: body
+   /usr/share/racket/collects/syntax/module-reader.rkt:211:2: wrap-internal
+   /usr/share/racket/collects/racket/../syntax/module-reader.rkt:76:9: wrap-internal/wrapper
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004lokay: '(round-n (simple-interest 1000.0 5.0)): has expected value 1050.0
+okay: '(round-n (simple-interest 1000.0 3.56)): has expected value 1035.6
+okay: '(round-n (simple-interest 1234.6 5.0)): has expected value 1296.33
+okay: '(round-n (compound-interest 1000.0 5 1 5) 2): has expected value 1276.28
+okay: '(round-n (compound-interest 1000.0 5 12 5) 2): has expected value 1283.36
+okay: '(round-n (compound-interest 1000.0 5 365 5) 2): has expected value 1284.0
+okay: '(poly-eval 5): has expected value 344
+okay: '(poly-eval 4): has expected value 175
+okay: '(poly-eval 1): has expected value 4
+okay: '(poly-eval 2): has expected value 23
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004lokay: '(round-n (simple-interest 1000.0 5.0)): has expected value 1050.0
+okay: '(round-n (simple-interest 1000.0 3.56)): has expected value 1035.6
+okay: '(round-n (simple-interest 1234.6 5.0)): has expected value 1296.33
+okay: '(round-n (compound-interest 1000.0 5 1 5) 2): has expected value 1276.28
+okay: '(round-n (compound-interest 1000.0 5 12 5) 2): has expected value 1283.36
+okay: '(round-n (compound-interest 1000.0 5 365 5) 2): has expected value 1284.0
+okay: '(poly-eval 5): has expected value 344
+okay: '(poly-eval 4): has expected value 175
+okay: '(poly-eval 1): has expected value 4
+okay: '(poly-eval 2): has expected value 23
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ clear
+[?2004l[H[2J[3J[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ +[Kracket
+[?2004lWelcome to Racket v8.12 [cs].
+> [C[C+[94m+[0m[K
+#<procedure:+>
+> [C[C([31m([0m[C[31m+[0m[94m+[0m[94m [0m 1[32m1[0m[32m [0m 2[32m2[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[K
+3
+> [C[C([31m([0m[C[31m1[0m[32m1[0m[32m [0m 2[32m2[0m[32m [0m 3[32m3[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[K
+[91mapplication: not a procedure;
+ expected a procedure that can be applied t[?7lo[?7h arguments
+  given: 1
+ [,bt for context]
+[0m> [C[C,[K'[32m'[0m[32m([0m[31m([0m[C[31m1[0m[32m1[0m[32m [0m 2[32m2[0m[32m [0m 3[32m3[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[K
+'(1 2 3)
+> [C[Ca[94ma[0m[K
+[91ma: undefined;
+ cannot reference an identifier before its definition
+  in module: [?7lt[?7hop-level
+ [,bt for context]
+[0m> [C[C'[32m'[0m[32ma[0m[94ma[0m[K
+'a
+> [C[C'[32m'[0m[32m([0m[31m([0m[C[31m_[0m[94m_[0m[K[31m+[0m[94m+[0m[94m [0m 1[32m1[0m[32m [0m 2[32m2[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[K
+'(+ 1 2)
+> [C[Cd[94md[0m[94me[0m[94mf[0m[94mi[0m[94mn[0m[94me[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m1[0m[94m [0m '[32m'[0m[K[K[K[K[K[K[K[K[K[K[K[K[K[K([31m([0m[C[31md[0m[94md[0m[94me[0m[94mf[0m[94mi[0m[94mn[0m[94me[0m[94m [0m l[94ml[0m[94ms[0m[94mi[0m[94mt[0m[94m1[0m[K[K[K[K[Kl[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m1[0m[94m [0m '[32m'[0m[32m([0m[31m([0m[C[31m1[0m[32m1[0m[32m [0m 2[32m2[0m[32m [0m 3[32m3[0m[32m [0m 4[32m4[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+> [C[Cd[94md[0m[94me[0m[94mf[0m[94mi[0m[K[K[K[K([31m([0m[C[31md[0m[94md[0m[94me[0m[94mf[0m[94mi[0m[94mn[0m[94me[0m[94m [0m l[94ml[0m[94ms[0m[94mi[0m[94mt[0m[94m2[0m[94m [0m ([31m([0m[C[31ml[0m[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m [0m '[32m'[0m[32ma[0m[94ma[0m[94m [0m '[32m'[0m[32mb[0m[94mb[0m[94m [0m '[32m'[0m[32mc[0m[94mc[0m[94m [0m '[32m'[0m[32md[0m[94md[0m[94m [0m '[32m'[0m[32me[0m[94me[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+> [C[Cc[94mc[0m[94ma[0m[94mr[0m[94m [0m [K[K[K[K([31m([0m[C[31mc[0m[94mc[0m[94ma[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m1[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[K
+1
+> [C[C([31m([0m[C[31mc[0m[94mc[0m[94md[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m1[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[K
+'(2 3 4)
+> [C[Cc[94mc[0m[K([31m([0m[C[K([31m([0m[C[31mc[0m[94mc[0m[94ma[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[K
+[91mcar: contract violation
+  expected: pair?
+  given: #<procedure:list>
+ [,bt[?7l [?7hfor context]
+[0m> [C[C[J> (car list)[C[C[31m([94mcar[Clist[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[K[94m2[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[K
+[91mlist2: undefined;
+ cannot reference an identifier before its definiti[?7lo[?7hn
+  in module: top-level
+ [,bt for context]
+[0m> [C[C[J> (car list2)[C[C[31m([94mcar[Clist2[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[J> (car list)[C[C[31m([94mcar[Clist[31m)[0m[C[C[C[C[C[C[C[C[C[C[J> (cdr list1)[C[C[31m([94mcdr[Clist1[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[J> (car list1)[C[C[31m([94mcar[Clist1[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[J> (define lsit2 (list 'a 'b 'c 'd 'e))[C[C[31m([94mdefine[Clsit2[C[31m([94mlist[C[32m'[94ma[C[32m'[94mb[C[32m'[94mc[C[32m'[94md[C[32m'[94me[31m))[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> (define list1 '(1 2 3 4))[C[C[31m([94mdefine[Clist1[C[32m'[31m([32m1[C2[C3[C4[31m))[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[J> (define lsit2 (list 'a 'b 'c 'd 'e))[C[C[31m([94mdefine[Clsit2[C[31m([94mlist[C[32m'[94ma[C[32m'[94mb[C[32m'[94mc[C[32m'[94md[C[32m'[94me[31m))[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K [31m([94mlist[0m [32m'[94ma[0m [32m'[94mb[0m [32m'[94mc[0m [32m'[94md[0m [32m'[94me[31m))[0m[K [31m([94mlist[0m [32m'[94ma[0m [32m'[94mb[0m [32m'[94mc[0m [32m'[94md[0m [32m'[94me[31m))[0m[K [31m([94mlist[0m [32m'[94ma[0m [32m'[94mb[0m [32m'[94mc[0m [32m'[94md[0m [32m'[94me[31m))[0m[K [31m([94mlist[0m [32m'[94ma[0m [32m'[94mb[0m [32m'[94mc[0m [32m'[94md[0m [32m'[94me[31m))[0m[94mi[0m [31m([94mlist[0m [32m'[94ma[0m [32m'[94mb[0m [32m'[94mc[0m [32m'[94md[0m [32m'[94me[31m))[0m[94ms[0m [31m([94mlist[0m [32m'[94ma[0m [32m'[94mb[0m [32m'[94mc[0m [32m'[94md[0m [32m'[94me[31m))[0m[94mt[0m [31m([94mlist[0m [32m'[94ma[0m [32m'[94mb[0m [32m'[94mc[0m [32m'[94md[0m [32m'[94me[31m))[0m[94m2[0m [31m([94mlist[0m [32m'[94ma[0m [32m'[94mb[0m [32m'[94mc[0m [32m'[94md[0m [32m'[94me[31m))[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+> [C[Cc[94mc[0m[94ma[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m2[0m[K[K[K[K[K[K[K[K[K([31m([0m[C[31mc[0m[94mc[0m[94ma[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m2[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[K
+'a
+> [C[C([31m([0m[C[31mc[0m[94mc[0m[94md[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m2[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[K
+'(b c d e)
+> [C[C([31m([0m[C[31mc[0m[94mc[0m[94ma[0m[94mr[0m[94m [0m ([31m([0m[C[31mc[0m[94mc[0m[94md[0m[94mr[0m[94m [0m ([31m([0m[C[31mc[0m[94mc[0m[94md[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m1[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+3
+> [C[C([31m([0m[C[31ma[0m[94ma[0m[94mp[0m[94mp[0m[94me[0m[94mn[0m[94md[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m1[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m2[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+'(1 2 3 4 a b c d e)
+> [C[C([31m([0m[C[31me[0m[94me[0m[94mx[0m[94mi[0m[94mt[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[K
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ ls
+[?2004llab3-sol.scm  lab3-tests.scm  LOG  README
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ lsracket[1Pclearracket lab3-tests.scm
+[?2004llab3-sol.scm:41:0: read-syntax: unexpected `)`
+  context...:
+   /usr/share/racket/collects/syntax/module-reader.rkt:214:17: body
+   /usr/share/racket/collects/syntax/module-reader.rkt:211:2: wrap-internal
+   /usr/share/racket/collects/racket/../syntax/module-reader.rkt:76:9: wrap-internal/wrapper
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004lokay: '(round-n (simple-interest 1000.0 5.0)): has expected value 1050.0
+okay: '(round-n (simple-interest 1000.0 3.56)): has expected value 1035.6
+okay: '(round-n (simple-interest 1234.6 5.0)): has expected value 1296.33
+okay: '(round-n (compound-interest 1000.0 5 1 5) 2): has expected value 1276.28
+okay: '(round-n (compound-interest 1000.0 5 12 5) 2): has expected value 1283.36
+okay: '(round-n (compound-interest 1000.0 5 365 5) 2): has expected value 1284.0
+okay: '(poly-eval 5): has expected value 344
+okay: '(poly-eval 4): has expected value 175
+okay: '(poly-eval 1): has expected value 4
+okay: '(poly-eval 2): has expected value 23
+okay: '(append-tails '(1 2 3) '(a b c)): has expected value ''(2 3 b c)
+okay: '(append-tails '(1) '(a b c)): has expected value ''(b c)
+okay: '(append-tails '(1) '(a)): has expected value ''()
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004lokay: '(round-n (simple-interest 1000.0 5.0)): has expected value 1050.0
+okay: '(round-n (simple-interest 1000.0 3.56)): has expected value 1035.6
+okay: '(round-n (simple-interest 1234.6 5.0)): has expected value 1296.33
+okay: '(round-n (compound-interest 1000.0 5 1 5) 2): has expected value 1276.28
+okay: '(round-n (compound-interest 1000.0 5 12 5) 2): has expected value 1283.36
+okay: '(round-n (compound-interest 1000.0 5 365 5) 2): has expected value 1284.0
+okay: '(poly-eval 5): has expected value 344
+okay: '(poly-eval 4): has expected value 175
+okay: '(poly-eval 1): has expected value 4
+okay: '(poly-eval 2): has expected value 23
+okay: '(append-tails '(1 2 3) '(a b c)): has expected value ''(2 3 b c)
+okay: '(append-tails '(1) '(a b c)): has expected value ''(b c)
+okay: '(append-tails '(1) '(a)): has expected value ''()
+okay: '(first-elements '(1 2 3) '(a b c)): has expected value ''(1 a)
+okay: '(first-elements '(1) '(a b c)): has expected value ''(1 a)
+okay: '(first-elements '(1) '(a)): has expected value ''(1 a)
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004llab3-sol.scm:58:0: read-syntax: unexpected `)`
+  context...:
+   /usr/share/racket/collects/syntax/module-reader.rkt:214:17: body
+   /usr/share/racket/collects/syntax/module-reader.rkt:211:2: wrap-internal
+   /usr/share/racket/collects/racket/../syntax/module-reader.rkt:76:9: wrap-internal/wrapper
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004lokay: '(round-n (simple-interest 1000.0 5.0)): has expected value 1050.0
+okay: '(round-n (simple-interest 1000.0 3.56)): has expected value 1035.6
+okay: '(round-n (simple-interest 1234.6 5.0)): has expected value 1296.33
+okay: '(round-n (compound-interest 1000.0 5 1 5) 2): has expected value 1276.28
+okay: '(round-n (compound-interest 1000.0 5 12 5) 2): has expected value 1283.36
+okay: '(round-n (compound-interest 1000.0 5 365 5) 2): has expected value 1284.0
+okay: '(poly-eval 5): has expected value 344
+okay: '(poly-eval 4): has expected value 175
+okay: '(poly-eval 1): has expected value 4
+okay: '(poly-eval 2): has expected value 23
+okay: '(append-tails '(1 2 3) '(a b c)): has expected value ''(2 3 b c)
+okay: '(append-tails '(1) '(a b c)): has expected value ''(b c)
+okay: '(append-tails '(1) '(a)): has expected value ''()
+okay: '(first-elements '(1 2 3) '(a b c)): has expected value ''(1 a)
+okay: '(first-elements '(1) '(a b c)): has expected value ''(1 a)
+okay: '(first-elements '(1) '(a)): has expected value ''(1 a)
+okay: '(first-longest '(1 2 3 4) '(a b c)): has expected value 1
+okay: '(first-longest '(1 2 3) '(a b c d)): has expected value ''a
+okay: '(first-longest '(1 2 3) '(a b c)): has expected value ''a
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004llab3-sol.scm:69:0: read-syntax: unexpected `)`
+  context...:
+   /usr/share/racket/collects/syntax/module-reader.rkt:214:17: body
+   /usr/share/racket/collects/syntax/module-reader.rkt:211:2: wrap-internal
+   /usr/share/racket/collects/racket/../syntax/module-reader.rkt:76:9: wrap-internal/wrapper
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ racket lab3-tests.scm
+[?2004lokay: '(round-n (simple-interest 1000.0 5.0)): has expected value 1050.0
+okay: '(round-n (simple-interest 1000.0 3.56)): has expected value 1035.6
+okay: '(round-n (simple-interest 1234.6 5.0)): has expected value 1296.33
+okay: '(round-n (compound-interest 1000.0 5 1 5) 2): has expected value 1276.28
+okay: '(round-n (compound-interest 1000.0 5 12 5) 2): has expected value 1283.36
+okay: '(round-n (compound-interest 1000.0 5 365 5) 2): has expected value 1284.0
+okay: '(poly-eval 5): has expected value 344
+okay: '(poly-eval 4): has expected value 175
+okay: '(poly-eval 1): has expected value 4
+okay: '(poly-eval 2): has expected value 23
+okay: '(append-tails '(1 2 3) '(a b c)): has expected value ''(2 3 b c)
+okay: '(append-tails '(1) '(a b c)): has expected value ''(b c)
+okay: '(append-tails '(1) '(a)): has expected value ''()
+okay: '(first-elements '(1 2 3) '(a b c)): has expected value ''(1 a)
+okay: '(first-elements '(1) '(a b c)): has expected value ''(1 a)
+okay: '(first-elements '(1) '(a)): has expected value ''(1 a)
+okay: '(first-longest '(1 2 3 4) '(a b c)): has expected value 1
+okay: '(first-longest '(1 2 3) '(a b c d)): has expected value ''a
+okay: '(first-longest '(1 2 3) '(a b c)): has expected value ''a
+okay: '(round-n (line-length '(0.0 0.0) '(3.0 4.0))): has expected value 5.0
+okay: '(round-n (line-length '(1.0 1.0) '(13.0 6.0))): has expected value 13.0
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ [Kjcreech1@remote05:~/i471/submit/lab3-sol$ racket
+[?2004lWelcome to Racket v8.12 [cs].
+> [C[Cl[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m1[0m[K
+[91mlist1: undefined;
+ cannot reference an identifier before its definition
+  in [?7lm[?7hodule: top-level
+ [,bt for context]
+[0m> [C[C*[94m*[0m[94m([0m[31m([0m[C[K[K([31m([0m[C[31mc[0m[94mc[0m[94ma[0m[94md[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m2[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[K
+[91mlist2: undefined;
+ cannot reference an identifier before its definit[?7li[?7hon
+  in module: top-level
+ [,bt for context]
+[0m> [C[C([31m([0m[C[31md[0m[94md[0m[94me[0m[94mf[0m[94mi[0m[94mn[0m[94me[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m1[0m[94m [0m '[32m'[0m[32m([0m[31m([0m[C[31m1[0m[32m1[0m[32m [0m 2[32m2[0m[32m [0m 3[32m3[0m[32m [0m 4[32m4[0m[32m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+> [C[C([31m([0m[C[31md[0m[94md[0m[94me[0m[94mf[0m[94mi[0m[94mn[0m[94me[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m2[0m[94m [0m ([31m([0m[C[31ml[0m[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m [0m '[32m'[0m[32ma[0m[94ma[0m[94m [0m '[32m'[0m[32mb[0m[94mb[0m[94m [0m '[32m'[0m[32mc[0m[94mc[0m[94m [0m '[32m'[0m[32md[0m[94md[0m[94m [0m '[32m'[0m[32me[0m[94me[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+> [C[C([31m([0m[C[31mc[0m[94mc[0m[94ma[0m[94md[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m2[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[K
+'b
+> [C[C([31m([0m[C[31mc[0m[94mc[0m[94md[0m[94md[0m[94md[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m2[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+'(d e)
+> [C[Ca[94ma[0m[94mp[0m[94mp[0m[94me[0m[94mn[0m[94md[0m[94m [0m ([31m([0m[C[31mc[0m[94mc[0m[94md[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m1[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[31m [0m ([31m([0m[C[31mc[0m[94mc[0m[94md[0m[94md[0m[94md[0m[94mr[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m2[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[31m)[0m[C[K[J-------------------------------------------------------------------------------[?7l-[?7h
+[91mstring:1:32: read-syntax: unexpected `)`
+[0m-------------------------------------------------------------------------------[?7l-[?7h
+> [94mappend[0m [31m([94mcdr[0m [94mlist1[31m)[0m [31m([94mcdddr[0m [94mlist2[31m))[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K
+#<procedure:append>
+'(2 3 4)
+'(d e)
+> [C[C([31m([0m[C[31ml[0m[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m1[0m[94m [0m l[94ml[0m[94mi[0m[94ms[0m[94mt[0m[94m2[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+'((1 2 3 4) (a b c d e))
+> [C[C([31m([0m[C[31me[0m[94me[0m[94mx[0m[94mi[0m[94mt[0m[94m)[0m[31m)[0m[C[C[C[C[C[C[K
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ ls
+[?2004llab3-sol.scm  lab3-tests.scm  LOG  README
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ git sat[K[Ktatus
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   lab3-sol.scm[m
+	[31mmodified:   lab3-tests.scm[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mLOG[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ git add [7m(line-length-tests)[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(line-length-tests)
+[A
+[?2004lbash: syntax error near unexpected token `('
+[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ git add .
+[?2004l[?2004hjcreech1@remote05:~/i471/submit/lab3-sol$ git add LOG
+[?2004l[?2004hjcreech1@remote0
