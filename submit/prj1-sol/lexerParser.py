@@ -120,7 +120,7 @@ class Parser:
                 requires_trailing_comma = True  
             else:
                 requires_trailing_comma = False  
-
+                
         if not requires_trailing_comma and elements:
             raise SyntaxError("Hash must end with a trailing comma before closing brace.")
 

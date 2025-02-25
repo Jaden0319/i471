@@ -4,7 +4,5 @@
 # this script works under those conditions.
 
 
-
-
 python3 lexerParser.py
 
