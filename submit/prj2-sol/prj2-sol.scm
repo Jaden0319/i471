@@ -56,9 +56,13 @@
 ;; Your implementation *must* use the fact that a binary search tree is
 ;; ordered.
 (define (search-bst k t)
-  'TODO
-)
+  (cond
+    [(null? t) 'not-found]  ;;base
+    [(eqv? k (car t)) (cadr t)]   ;;eq
+    [(symbol<? k (car t)) (search-bst k (caddr t))]  ;;left
+    [(symbol<? (car t) k) (search-bst k (cadddr t))]))  ;;right
 
+  
 ;; #2: 20-points
 ;;
 ;; Return the binary search tree which is just like `t` except that
@@ -66,14 +70,21 @@
 ;;
 ;; The key `k` should be inserted into `t` without any attempt to
 ;; balance `t`.
+
 (define (insert-bst k v t)
-  'TODO
-)
+  (cond
+    [(null? t) (list k v '() '())]  ;; create
+    [(eqv? k (car t)) (list k v (caddr t) (cadddr t))]  ;; update 
+    [(symbol<? k (car t)) (list (car t) (cadr t) (insert-bst k v (caddr t)) (cadddr t))]  ;; left
+    [else (list (car t) (cadr t) (caddr t) (insert-bst k v (cadddr t)))])) ;;right
 
 ;; Insert definition for quadratic-roots from Lab 4.
 (define (quadratic-roots a b c)
-  'TODO
-)
+  (let* ((discriminant (- (* b b) (* 4 a c)))
+         (sqrt-disc (sqrt discriminant))
+         (root1 (/ (+ (- b) sqrt-disc) (* 2 a)))
+         (root2 (/ (- (- b) sqrt-disc) (* 2 a))))
+    (list root1 root2)))
 
 ;; #3: 10-points
 ;;
@@ -89,8 +100,8 @@
 ;; Hint: Use `map` with a function which calls `quadratic-roots`
 ;; with its arguments extracted from a triple.
 (define (list-quadratic-roots triples)
-  'TODO
-)
+  (map (lambda (triple) (quadratic-roots (car triple) (cadr triple) (caddr triple)))
+       triples))
 
 ;; The racket utility (range n) which returns (0 1 2 ... (- n 1))
 ;; may be useful. 
@@ -103,8 +114,7 @@
 ;;
 ;; Hint: Use map and foldl.
 (define (sum-fn-in-range fn n)
-  'TODO
-)
+  (foldl + 0 (map fn (range n))))
 
 ;; #5: 15-points
 ;;
@@ -121,8 +131,7 @@
 ;;
 ;; Hint: use map and foldl
 (define (eval-poly x coeffs)
-  'TODO
-)
+  (foldl + 0 (map (lambda (coef i) (* coef (expt x i))) coeffs (range (length coeffs)))))
 
 ;; #6: 5-points
 ;; Given coeffs as in the previous exercise, return a function
@@ -132,7 +141,11 @@
 ;;
 ;; *Hint*: adapt your solution to the previous exercise.
 (define (coeffs-poly coeffs)
-  'TODO
+  (lambda (x) 
+    (foldl + 0 
+           (map (lambda (coef i) (* coef (expt x i))) 
+                coeffs 
+                (range (length coeffs)))))
 )
   
 ;; #7: 20-points

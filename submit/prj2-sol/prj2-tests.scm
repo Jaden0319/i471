@@ -29,7 +29,7 @@
     (check-equal? (search-bst 'a t1) 'not-found) 
     (check-equal? (search-bst 'a '()) 'not-found) 
    ))
-;(search-bst-tests)
+;;(search-bst-tests)
 
 (define (inorder-visit t)
   (if (null? t)
@@ -62,14 +62,14 @@
 	 [sort-pairs4 '((c 55) (x 11))])
     (check-equal? t4-pairs sort-pairs4))
 )
-;(insert-bst-tests)
+;;(insert-bst-tests)
 
 
 (define (list-quadratic-roots-tests)
   (check-equal? (list-quadratic-roots '((1 -5 6) (2 0 -18) (2 0 18)))
 		'((3 2) (3 -3) (0+3i 0-3i)))
 )
-;(list-quadratic-roots-tests)
+;;(list-quadratic-roots-tests)
 
 (define (sum-fn-in-range-tests)
   (check-equal? (sum-fn-in-range (lambda (i) (+ i 1)) 5) 15)
@@ -79,7 +79,7 @@
   (check-equal? (sum-fn-in-range (lambda (n) (+ n 5)) 1) 5)
   (check-equal? (sum-fn-in-range (lambda (n) (+ n 5)) 5) 35)
 )
-;(sum-fn-in-range-tests)
+;;(sum-fn-in-range-tests)
 
 (define (eval-poly-tests)
   (check-equal? (eval-poly 2 '(1 1 1 1 1)) 31)
@@ -90,7 +90,7 @@
   (check-equal? (eval-poly 5 '(2)) 2)
   (check-equal? (eval-poly 8 '()) 0)
 )
-;(eval-poly-tests)
+;;(eval-poly-tests)
 
 (define (coeffs-poly-tests)
   (check-equal? ((coeffs-poly '(1 1 1 1 1)) 2) 31)
@@ -101,7 +101,7 @@
   (check-equal? ((coeffs-poly '(2)) 5) 2)
   (check-equal? ((coeffs-poly '()) 8) 0)
 )
-;(coeffs-poly-tests)
+(coeffs-poly-tests)
 
 (define (make-poly-tests)
   (check-equal? (make-poly 'x '(1 1 1 1 1))
