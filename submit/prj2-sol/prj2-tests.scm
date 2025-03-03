@@ -90,7 +90,7 @@
   (check-equal? (eval-poly 5 '(2)) 2)
   (check-equal? (eval-poly 8 '()) 0)
 )
-;;(eval-poly-tests)
+(eval-poly-tests)
 
 (define (coeffs-poly-tests)
   (check-equal? ((coeffs-poly '(1 1 1 1 1)) 2) 31)
@@ -125,7 +125,7 @@
   (check-equal? (make-poly 'a '(2)) '(+ (* 2 (expt a 0))))
   (check-equal? (make-poly 'x '()) '(+))
 )
-;(make-poly-tests)
+(make-poly-tests)
 
 (define (dynamic-coeffs-poly-tests)
   (check-equal? ((dynamic-coeffs-poly '(1 1 1 1 1)) 2) 31)
@@ -136,4 +136,4 @@
   (check-equal? ((dynamic-coeffs-poly '(2)) 5) 2)
   (check-equal? ((dynamic-coeffs-poly '()) 8) 0)
 )
-;(dynamic-coeffs-poly-tests)
+(dynamic-coeffs-poly-tests)

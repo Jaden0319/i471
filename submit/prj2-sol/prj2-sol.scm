@@ -160,11 +160,11 @@
 ;;
 ;; Cannot use recursion.
 (define (make-poly x coeffs)
-  'TODO
-)
-		   
-
-
+  (if (null? coeffs)
+      '(+)
+      (cons '+ (map (lambda (coef i) `(* ,coef (expt ,x ,i))) 
+                    coeffs 
+                    (range (length coeffs))))))
 
 ;; #8: 5-points
 ;;
@@ -173,9 +173,14 @@
 ;;
 ;; Hint: use make-fn from slides.
 ;;
+
+(define (make-fn args-list body)
+  (eval `(lambda ,args-list ,body)
+	(make-base-namespace)))
+
+
 (define (dynamic-coeffs-poly coeffs)
-  'TODO
-)
+  (make-fn '(x) (make-poly 'x coeffs)))
 
 
 
