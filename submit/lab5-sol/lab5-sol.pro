@@ -24,25 +24,37 @@
 
 % #1
 % cons_list_car(Ls, Hd): succeed iff Hd matches the head of cons-list Ls.
-cons_list_car(_Ls, _Hd) :- 'TODO'.
+cons_list_car(_Ls, _Hd) :- 
+   _Ls = cons(H, _), 
+   H = _Hd.
 
 % #2
 % cons_list_cadr(Ls, Cadr): succeed iff Cadr matches the scheme
 % cadr of cons-list Ls.
-cons_list_cadr(_Ls, _Cadr) :- 'TODO'.
+cons_list_cadr(_Ls, _Cadr) :- 
+   _Ls = cons(_, cons(Cadr, _)), 
+   Cadr = _Cadr.
+   
 
 % #3
 % cons_list_cddr(Ls, Cddr): succeed iff Cddr matches the scheme
 % cddr of cons-list Ls.
-cons_list_cddr(_Ls, _Cddr) :- 'TODO'.
+cons_list_cddr(_Ls, _Cddr) :- 
+   _Ls = cons(_, cons(_, Cddr)), 
+   Cddr = _Cddr.
 
 % #4
 % caddr(List, Caddr): succeed iff Caddr matches the Scheme caddr of List.
-caddr(_List, _Caddr) :- 'TODO'.
+caddr(_List, _Caddr) :- 
+   List = cons(_, cons(_, cons(Caddr, _))).  
+
+  
+   
 
 % #5
 % cdar(List, Cdar): succeed iff Cdar matches the Scheme cdar of List.
-cdar(_List, _Cdar) :- 'TODO'.
+cdar(_List, _Cdar) :- 
+   List = cons(_, Cdar).
 
 % #6
 % procedure length_second(List, Len): succeed iff Len
@@ -51,13 +63,22 @@ cdar(_List, _Cdar) :- 'TODO'.
 % Hint: use pattern matching on List to extract its second
 % element Second and then use length(Second, Len) to match
 % Len with the length of Second.
-length_second(_List, _Len) :- 'TODO'.
+length_second(_List, _Len) :- 
+   List = cons(_, cons(Second, _)).                 
+   length(Second, Len).
+
 
 % #7
 % area(Shape, Area): succeed iff Area matches the area of Shape,
 % for Shape in rect(Width, Height) and circle(Radius).
-area(_Shape, _Area) :- 'TODO'.
-
+area(_Shape, _Area) :- 
+   (Shape = rect(Width, Height),
+   number(Width), number(Height),
+   Area is Width * Height),
+   (Shape = circle(Radius),
+   number(Width), number(Height),
+   Area is pi * Radius * Radius).
+   
 % #8
 % sum_list(List, Sum): succeed iff Sum matches the sum of the numbers in
 % number-list Sum.  *Must* be implemented as a wrapper which simply

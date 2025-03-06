@@ -1,12 +1,13 @@
 #!/usr/bin/env -S prolog
 
+
 :- module('prj3_tests', []).
 
 :- use_module('lab5-sol.pro').
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% cons_list_car/2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:-begin_tests(cons_list_car, [blocked('TODO')]).
+:-begin_tests(cons_list_car, []).
 test(nil, [fail]) :-
     List = nil,
     cons_list_car(List, _).
@@ -26,7 +27,7 @@ test(internal, [fail]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% cons_list_cadr/2 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:-begin_tests(cons_list_cadr, [blocked('TODO')]).
+:-begin_tests(cons_list_cadr, []).
 test(nil, [fail]) :-
     List = nil,
     cons_list_cadr(List, _).
@@ -46,7 +47,7 @@ test(struct, [all(X=[33])]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% cons_list_cddr/2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:-begin_tests(cons_list_cddr, [blocked('TODO')]).
+:-begin_tests(cons_list_cddr, []).
 test(nil, [fail]) :-
     List = nil,
     cons_list_cddr(List, _).
@@ -66,7 +67,7 @@ test(struct, [all(X=[33])]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% caddr/2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:-begin_tests(caddr, [blocked('TODO')]).
+:-begin_tests(caddr, []).
 test(empty, [fail]) :-
     List = [],
     caddr(List, _).
@@ -89,7 +90,7 @@ test(backStruct, [all(X=[2])]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% cdar/2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:-begin_tests(cdar, [blocked('TODO')]).
+:-begin_tests(cdar, []).
 test(empty, [fail]) :-
     List = [],
     cdar(List, _).
@@ -110,7 +111,7 @@ test(back_struct, [all(X=[ b ])]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% length_second/2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:-begin_tests(length_second, [blocked('TODO')]).
+:-begin_tests(length_second, []).
 test(zero, [all(Len=[ 0 ])]) :-
     length_second([a, []], Len).
 test(one, [all(Len=[ 1 ])]) :-
@@ -125,7 +126,7 @@ test(no_second, [fail]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% area/2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:-begin_tests(area, [blocked('TODO')]).
+:-begin_tests(area, []).
 test(rect_2_3, [all(A = [6])]) :-
     area(rect(2, 3), A).
 test(circle, [all(A = [Pi])]) :-
