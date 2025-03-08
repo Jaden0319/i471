@@ -78,7 +78,7 @@
     [(symbol<? k (car t)) (list (car t) (cadr t) (insert-bst k v (caddr t)) (cadddr t))]  ;; left
     [else (list (car t) (cadr t) (caddr t) (insert-bst k v (cadddr t)))])) ;;right
 
-;; Insert definition for quadratic-roots from Lab 4.
+;; Inserted definition for quadratic-roots from Lab 4.
 (define (quadratic-roots a b c)
   (let* ((discriminant (- (* b b) (* 4 a c)))
          (sqrt-disc (sqrt discriminant))
