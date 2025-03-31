@@ -1,0 +1,8 @@
+*~
+*.git*
+.zipignore
+*.zip
+*/prj3-tests.pro
+
+
+

@@ -1,0 +1,325 @@
+Script started on 2025-03-04 11:58:23-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="64" LINES="15"]
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ ls
+[?2004llab5-sol.pro  lab5-tests.pro  LOG  README
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ git sta[K[A[Kjcreech1@remote01:~/i471/submit/lab5-sol$ git sta[K[A[Kjcreech1@remote01:~/i471/submit/lab5-sol$ git sta[K[A[Kjcreech1@remote01:~/i471/submit/lab5-sol$ git status -s
+[?2004l [31mM[m README
+[31m??[m LOG
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ git add .[K[K[K[K[Kstatus -s
+[?2004l [31mM[m README
+[31m??[m LOG
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ git add REad[K[KADME
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ git commit -m 'updated  README'
+[?2004l[main 4946fab] updated README
+ Committer: Jaden Creech <jcreech1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ git push
+[?2004lEnumerating objects: 18, done.
+Counting objects:   5% (1/18)Counting objects:  11% (2/18)Counting objects:  16% (3/18)Counting objects:  22% (4/18)Counting objects:  27% (5/18)Counting objects:  33% (6/18)Counting objects:  38% (7/18)Counting objects:  44% (8/18)Counting objects:  50% (9/18)Counting objects:  55% (10/18)Counting objects:  61% (11/18)Counting objects:  66% (12/18)Counting objects:  72% (13/18)Counting objects:  77% (14/18)Counting objects:  83% (15/18)Counting objects:  88% (16/18)Counting objects:  94% (17/18)Counting objects: 100% (18/18)Counting objects: 100% (18/18), done.
+Delta compression using up to 8 threads
+Compressing objects:   7% (1/14)Compressing objects:  14% (2/14)Compressing objects:  21% (3/14)Compressing objects:  28% (4/14)Compressing objects:  35% (5/14)Compressing objects:  42% (6/14)Compressing objects:  50% (7/14)Compressing objects:  57% (8/14)Compressing objects:  64% (9/14)Compressing objects:  71% (10/14)Compressing objects:  78% (11/14)Compressing objects:  85% (12/14)Compressing objects:  92% (13/14)Compressing objects: 100% (14/14)Compressing objects: 100% (14/14), done.
+Writing objects:   7% (1/14)Writing objects:  14% (2/14)Writing objects:  21% (3/14)Writing objects:  28% (4/14)Writing objects:  35% (5/14)Writing objects:  42% (6/14)Writing objects:  50% (7/14)Writing objects:  57% (8/14)Writing objects:  64% (9/14)Writing objects:  71% (10/14)Writing objects:  78% (11/14)Writing objects:  85% (12/14)Writing objects:  92% (13/14)Writing objects: 100% (14/14)Writing objects: 100% (14/14), 3.03 KiB | 517.00 KiB/s, done.
+Total 14 (delta 7), reused 1 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/7)[Kremote: Resolving deltas:  14% (1/7)[Kremote: Resolving deltas:  28% (2/7)[Kremote: Resolving deltas:  42% (3/7)[Kremote: Resolving deltas:  57% (4/7)[Kremote: Resolving deltas:  71% (5/7)[Kremote: Resolving deltas:  85% (6/7)[Kremote: Resolving deltas: 100% (7/7)[Kremote: Resolving deltas: 100% (7/7), completed with 4 local objects.[K
+To github.com:Jaden0319/i471.git
+   8a9bfc6..4946fab  main -> main
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ [K[A[Kjcreech1@remote01:~/i471/submit/lab5-sol$ [K[A[Kjcreech1@remote01:~/i471/submit/lab5-sol$ ls
+[?2004llab5-sol.pro  lab5-tests.pro  LOG  README
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [K[A[Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [K[A[Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [K[A[Kjcreech1@remote01:~/i471/submit/lab5-sol$ [K[A[Kjcreech1@remote01:~/i471/submit/lab5-sol$ swipl
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- 22 = X.
+X = 22.
+
+?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ?- ^C
+Action (h for help) ? Unknown option (h for help)
+Action (h for help) ? Unknown option (h for help)
+Action (h for help) ? Options:
+a:           abort         b:           break
+c:           continue      e:           exit
+g:           goals         s:           C-backtrace
+t:           trace         p:		  Show PID
+h (?):       help
+Action (h for help) ? Unknown option (h for help)
+Action (h for help) ? abort
+|    :
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ ls
+[?2004llab5-sol.pro  lab5-tests.pro  LOG  README
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ ls[K[K[7mswipl lab5-tests.pro[27mswipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0m
+
+^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0mn y
+h
+l
+/
+
+
+
+^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ??- [K?- cons_list_car(cons(22, cons(33, nil[42G)[34G[43G[43G)[25G[44G, Car[49G)[20G[50G.[50G[K.?- ?[P ?- [P 
+[1;31mERROR: Unknown procedure: cons_list_car/2 (DWIM could not correct goal)
+[0m?- ?- [[8G'lab5-sol.pro[21G'[8G[22G[22G][7G[23G.
+[1;31mERROR: Unknown procedure: (?-)/1
+ERROR:   ?- is the Prolog prompt
+ERROR:   See FAQ at https://www.swi-prolog.org/FAQ/ToplevelMode.txt
+ERROR: In:
+ERROR:    [9] [34mthrow(error(existence_error(procedure,...),_124))[0m[0m[1;31m
+ERROR:    [6] [34mcorrect_goal((?-['lab5-sol.pro']),user,[],_160)[0m[0m[1;31m at /usr/lib/swi-prolog/boot/dwim.pl:92
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+[0m?- ?- ?- ['lab5-sol.pro'].?- ?[P ?- [P 
+[1mtrue.[0m
+
+?- ?- cons_list_car(cons(22, cons(33, nil[42G)[34G[43G[43G)[25G[44G, Car[49G)[20G[50G.[6G[1@\ [6G[P [6G[1@\ [6G[P ?- ?[P ?- [P 
+
+
+^CAction (h for help) ? abort
+[32m% Execution Aborted
+[0m?- a:
+|    ^C
+Action (h for help) ? Options:
+a:           abort         b:           break
+c:           continue      e:           exit
+g:           goals         s:           C-backtrace
+t:           trace         p:		  Show PID
+h (?):       help
+Action (h for help) ? Unknown option (h for help)
+Action (h for help) ? abort
+|    :
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0m
+
+^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0m^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0m
+^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0mh
+\ ç ^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- h
+|    
+|    ?
+|    
+|    
+|    ^C
+Action (h for help) ? Options:
+a:           abort         b:           break
+c:           continue      e:           exit
+g:           goals         s:           C-backtrace
+t:           trace         p:		  Show PID
+h (?):       help
+Action (h for help) ? Unknown option (h for help)
+Action (h for help) ? Unknown option (h for help)
+Action (h for help) ? ^C
+
+Action (h for help) ? Unknown option (h for help)
+Action (h for help) ? ^C
+
+Action (h for help) ? abort
+EOF: exit (status 4)
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ ;[Kswipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0mc
+
+
+^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro[K lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0mls
+^[[A    ^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0m1 ^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- license
+|    
+|    :
+|    
+|    ^C
+Action (h for help) ? 
+continue
+:
+a:
+|    :
+|    ^C
+Action (h for help) ? ^C
+
+Action (h for help) ? abort
+EOF: exit (status 4)
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ :
+[?2004l[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ :swipl
+[?2004lWelcome to SWI-Prolog (threaded, 64 bits, version 9.0.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [?- ['lab5-sol.pro[18G'[5G[19G[19G][4G[20G.
+[1mtrue.[0m
+
+?- cons_list_car(cons(22, cons(33, nil[39G)[31G[40G[40G)[22G[41G, Car[46G)[17G[47G.
+^[[A^[[A        ?
+h
+-h
+^CAction (h for help) ? abort
+[32m% Execution Aborted
+[0m?- :?- [Ka:
+|    a;[7G[K:
+|    ^C
+Action (h for help) ? ^C
+
+Action (h for help) ? ^C
+
+Action (h for help) ? ^C
+
+Action (h for help) ? ^C
+
+Action (h for help) ? ^C
+
+Action (h for help) ? Unknown option (h for help)
+Action (h for help) ? abort
+EOF: exit (status 4)
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl:[Kswipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0mbe  []
+^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ [Kjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0m
+
+
+
+
+^[[A^[[A        ç ^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[32m% PL-Unit: cons_list_car [0m?- cons_list_car(cons(22, cons(33, nil)), Car).
+^C
+[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[31mWarning: /home2/jcreech1/i471/submit/lab5-sol/lab5-sol.pro:27:
+Warning:    Singleton variables: [Ls,Hd]
+[0m[32m% PL-Unit: cons_list_car [0m[1;31m
+ERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:10:
+	test nil: must fail but succeeded in 0.00 seconds
+
+[0m[32m.[0m[32m.[0m[32m.[0m[1;31m
+ERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:22:
+	test internal: must fail but succeeded in 0.00 seconds
+
+[0m[32m[1;31m**FAILED[0m[0m[32m 0.000 sec
+[0m[32m% PL-Unit: cons_list_cadr blocked: TODO
+[0m[32m% PL-Unit: cons_list_cddr blocked: TODO
+[0m[32m% PL-Unit: caddr blocked: TODO
+[0m[32m% PL-Unit: cdar blocked: TODO
+[0m[32m% PL-Unit: length_second blocked: TODO
+[0m[32m% PL-Unit: area blocked: TODO
+[0m[32m% PL-Unit: sum_list blocked: TODO
+[0m[32m% PL-Unit: sum_lengths blocked: TODO
+[0m[32m% 2 tests failed
+[0m[32m% 3 tests passed
+[0m[1;31mERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:172: prj3_tests:main: false
+[0m[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[31mWarning: /home2/jcreech1/i471/submit/lab5-sol/lab5-sol.pro:27:
+Warning:    Singleton-marked variable appears more than once: _Ls
+Warning:    Singleton-marked variable appears more than once: _Hd
+[0m[32m% PL-Unit: cons_list_car [0m[1;31m
+ERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:10:
+	test nil: must fail but succeeded in 0.00 seconds
+
+[0m[1;31mERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:13:
+	test simple: wrong "all" answer:
+ERROR:     Expected: [a]
+ERROR:        Found: [cons(a,_27532)]
+[0m[1;31mERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:16:
+	test multi: wrong "all" answer:
+ERROR:     Expected: [f(2)]
+ERROR:        Found: []
+[0m[1;31mERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:19:
+	test backMatch: wrong "all" answer:
+ERROR:     Expected: [2]
+ERROR:        Found: []
+[0m[32m.[0m[32m[1;31m**FAILED[0m[0m[32m 0.000 sec
+[0m[32m% PL-Unit: cons_list_cadr blocked: TODO
+[0m[32m% PL-Unit: cons_list_cddr blocked: TODO
+[0m[32m% PL-Unit: caddr blocked: TODO
+[0m[32m% PL-Unit: cdar blocked: TODO
+[0m[32m% PL-Unit: length_second blocked: TODO
+[0m[32m% PL-Unit: area blocked: TODO
+[0m[32m% PL-Unit: sum_list blocked: TODO
+[0m[32m% PL-Unit: sum_lengths blocked: TODO
+[0m[32m% 4 tests failed
+[0m[32m% 1 tests passed
+[0m[1;31mERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:172: prj3_tests:main: false
+[0m[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[31mWarning: /home2/jcreech1/i471/submit/lab5-sol/lab5-sol.pro:27:
+Warning:    Singleton-marked variable appears more than once: _Ls
+Warning:    Singleton-marked variable appears more than once: _Hd
+[0m[32m% PL-Unit: cons_list_car [0m[1;31m
+ERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:10:
+	test nil: must fail but succeeded in 0.00 seconds
+
+[0m[1;31mERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:13:
+	test simple: wrong "all" answer:
+ERROR:     Expected: [a]
+ERROR:        Found: [cons(a,_27532)]
+[0m[1;31mERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:16:
+	test multi: wrong "all" answer:
+ERROR:     Expected: [f(2)]
+ERROR:        Found: []
+[0m[1;31mERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:19:
+	test backMatch: wrong "all" answer:
+ERROR:     Expected: [2]
+ERROR:        Found: []
+[0m[32m.[0m[32m[1;31m**FAILED[0m[0m[32m 0.000 sec
+[0m[32m% PL-Unit: cons_list_cadr blocked: TODO
+[0m[32m% PL-Unit: cons_list_cddr blocked: TODO
+[0m[32m% PL-Unit: caddr blocked: TODO
+[0m[32m% PL-Unit: cdar blocked: TODO
+[0m[32m% PL-Unit: length_second blocked: TODO
+[0m[32m% PL-Unit: area blocked: TODO
+[0m[32m% PL-Unit: sum_list blocked: TODO
+[0m[32m% PL-Unit: sum_lengths blocked: TODO
+[0m[32m% 4 tests failed
+[0m[32m% 1 tests passed
+[0m[1;31mERROR: /home2/jcreech1/i471/submit/lab5-sol/lab5-tests.pro:172: prj3_tests:main: false
+[0m[?2004hjcreech1@remote01:~/i471/submit/lab5-sol$ swipl lab5-tests.pro
+[?2004l[31mWarning: /home2/jcreech1/i471/submit/lab5-sol/lab5-sol.pro:27:
+Warning:  
