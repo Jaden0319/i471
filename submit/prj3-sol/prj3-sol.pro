@@ -191,4 +191,4 @@ node_in_path(Node, [edge(Node, _) | _]).
 node_in_path(Node, [edge(_, Node) | _]).
 node_in_path(Node, [_ | T]) :-
     node_in_path(Node, T).
-
+    
