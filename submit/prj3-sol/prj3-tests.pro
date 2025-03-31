@@ -6,7 +6,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% get_divisible/3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:- begin_tests(get_divisible, [blocked('TODO')]).
+:- begin_tests(get_divisible).
 test(three, [all(X == [[6, 3, 27]])]) :- 
     get_divisible([2, 1, 6, 5, 3, 8, 27, 2], 3, X).
 test(five, [all(X == [[5, 5, 25]])]) :-
@@ -17,7 +17,7 @@ test(none, [all(X == [[]])]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% has_length_n_lists %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:- begin_tests(has_length_n_lists, [blocked('TODO')]).
+:- begin_tests(has_length_n_lists).
 test(len0_2, [nondet]) :-
     has_length_n_lists([], 2).
 test(len1_2, [nondet]) :-
@@ -35,7 +35,7 @@ test(len4_m1_fail, [fail]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% poly_eval/3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:- begin_tests(poly_eval, [blocked('TODO')]).
+:- begin_tests(poly_eval).
 test(empty2, [nondet, true(V =:= 0)]) :-
     poly_eval([], 2, V).
 test(const2, [nondet, true(V =:= 5)]) :-
@@ -56,7 +56,7 @@ test(fail, [fail]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% plus_expr/2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:- begin_tests(plus_expr, [blocked('TODO')]).
+:- begin_tests(plus_expr).
 test(single, [nondet, true(V = a)]) :-
     plus_expr([a], V).
 test(triple, [nondet, true(V = a + b + c)]) :-
@@ -67,7 +67,7 @@ test(num4, [nondet, true(V = 11 + 22 + 33 + 44)]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% poly_expr/3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:- begin_tests(poly_expr, [blocked('TODO')]).
+:- begin_tests(poly_expr).
 test(const, [nondet, true(E = 5 * x**0)]) :-
     poly_expr([5], x, E).
 test(linear, [nondet, true(E = 5*x**0 + 7*x**1)]) :-
@@ -88,7 +88,7 @@ test(quadratic_fail, [fail]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% element_at/3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:- begin_tests(element_at, [blocked('TODO')]).
+:- begin_tests(element_at).
 test(zero, [nondet, true(E = a)]) :-
     element_at([a, b, c], 0, E).
 test(one, [nondet, true(E = b)]) :-
@@ -109,7 +109,7 @@ dag1([edge(1, 2), edge(1, 3), edge(2, 4), edge(3, 4)]).
 dag2(Dag2) :-
     dag1(Dag1), append([edge(0, 1), edge(4, 5)], Dag1, Dag2).
 
-:- begin_tests(dag_path, [blocked('TODO')]).
+:- begin_tests(dag_path).
 test(dag1_path0, [set(Path = [[]])]) :-
     dag1(Dag1), 
     dag_path(Dag1, 2, 2, Path).
@@ -152,7 +152,7 @@ graph1([edge(1, 2), edge(2, 1), edge(1, 3), edge(3, 1),
 graph2(Graph2) :-
     graph1(Graph1), append([edge(0, 1), edge(4, 5)], Graph1, Graph2).
 
-:- begin_tests(graph_path1, [blocked('TODO')]).
+:- begin_tests(graph_path1).
 test(graph1_path0, [set(Path = [[]])]) :-
     graph1(Graph1), 
     graph_path1(Graph1, 2, 2, Path).
@@ -191,7 +191,7 @@ test(graph2_fail1, [fail]) :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% graph_path2/4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-:- begin_tests(graph_path2, [blocked('TODO')]).
+:- begin_tests(graph_path2).
 test(graph1_2_2_path0, [true]) :-
     graph1(Graph1),
     graph_path2(Graph1, 2, 2, Path),
