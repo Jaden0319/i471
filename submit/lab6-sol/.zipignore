@@ -1,0 +1,14 @@
+*lifetimes1.cc
+*struct-layout1.c
+*matrix-entry-offsets.c
+*lifetimes1
+*lifetimes2
+*struct-layout1
+*struct-layout2
+*matrix-entry-offsets
+*matrix-offset-indexes
+*tests/
+*tests/*.out
+.gitignore
+.zipignore
+*~
