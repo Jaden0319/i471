@@ -133,7 +133,9 @@ dag_path(Dag, From, To, Path) :-
   dag_path_aux(Dag, From, To, [], Path).
 
   dag_path(Dag, Node, Node, []) :-
-    member(edge(Node, _), Dag);
+    member(edge(Node, _), Dag).
+
+  dag_path(Dag, Node, Node, []) :-
     member(edge(_, Node), Dag).
 
 dag_path_aux(Dag, From, To, Acc, Path) :-
