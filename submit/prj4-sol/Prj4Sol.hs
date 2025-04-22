@@ -44,7 +44,7 @@ import Data.List (lookup)
 -- of singleton lists [e].
 -- *Restriction*: must use map with a section.
 toSingletonLists :: [e] -> [[e]]
-toSingletonLists list = [] -- TODO
+toSingletonLists list = map (:[]) list
 
 --------------------------------- listMap -------------------------------
 
@@ -56,7 +56,7 @@ toSingletonLists list = [] -- TODO
 -- *Restriction*: cannot use explicit recursion
 -- Hint: use the map function or a list comprehension
 listMap :: (a -> b -> c) -> a -> [b] -> [c]
-listMap f a list =  [] -- TODO
+listMap f a list = map (f a) list
 
 ---------------------------------- member -------------------------------
 
@@ -67,7 +67,7 @@ listMap f a list =  [] -- TODO
 -- Hint: define folding function using a lambda or local let/where definition;
 -- also see recursive definition of member in slides.
 member :: Eq e => e -> [e] -> Bool
-member e list = False -- TODO
+member e list = foldl (\acc x -> acc || x == e) False list
 
 
 ------------------------------- selectNApart ----------------------------
@@ -79,7 +79,7 @@ member e list = False -- TODO
 -- n, 2n, 3n, 4n, ... .
 -- Hint: use drop
 selectNApart :: Int -> [e] -> [e]
-selectNApart n list = [] -- TODO
+selectNApart n list = if null list then [] else head list : selectNApart n (drop n list)
 
 ------------------------------ evalIntExpr ------------------------------
 
@@ -99,7 +99,12 @@ data IntExpr =
 -- expression-tree given by its argument expr.
 -- Hint: use a simple recursive traversal
 evalIntExpr :: IntExpr -> Int
-evalIntExpr expr = 0 -- TODO
+evalIntExpr expr = case expr of
+  IntLeaf x -> x
+  IntAdd x y -> evalIntExpr x + evalIntExpr y
+  IntSub x y -> evalIntExpr x - evalIntExpr y
+  IntMul x y -> evalIntExpr x * evalIntExpr y
+  IntUminus x -> - evalIntExpr x
 
 
 ------------------------------ evalIdExpr -------------------------------
@@ -125,7 +130,13 @@ type Assoc v = [ (String, v) ]
 -- not found in assoc, then its value should default to 0.
 -- Hint: use Data.List.lookup imported above.
 evalIdExpr :: IdExpr -> Assoc Int -> Int
-evalIdExpr expr assoc = 0 -- TODO
+evalIdExpr expr assoc = case expr of
+  IdId x -> maybe 0 id (lookup x assoc) 
+  IdLeaf x -> x  
+  IdAdd x y -> evalIdExpr x assoc + evalIdExpr y assoc 
+  IdSub x y -> evalIdExpr x assoc - evalIdExpr y assoc  
+  IdMul x y -> evalIdExpr x assoc * evalIdExpr y assoc  
+  IdUminus x -> - evalIdExpr x assoc  
 
   
 ----------------------------- evalMaybeExpr -----------------------------
@@ -147,7 +158,26 @@ data MaybeExpr =
 -- in assoc, then the function should return Nothing.
 -- Hint: use do notation.
 evalMaybeExpr :: MaybeExpr -> Assoc Int -> Maybe Int
-evalMaybeExpr expr assoc = Just 0  -- TODO
+evalMaybeExpr expr assoc = case expr of
+  MaybeId x -> do
+    v <- lookup x assoc
+    return v
+  MaybeLeaf x -> Just x
+  MaybeAdd x y -> do
+    v1 <- evalMaybeExpr x assoc
+    v2 <- evalMaybeExpr y assoc
+    return (v1 + v2)
+  MaybeSub x y -> do
+    v1 <- evalMaybeExpr x assoc
+    v2 <- evalMaybeExpr y assoc
+    return (v1 - v2)
+  MaybeMul x y -> do
+    v1 <- evalMaybeExpr x assoc
+    v2 <- evalMaybeExpr y assoc
+    return (v1 * v2)
+  MaybeUminus x -> do
+    v <- evalMaybeExpr x assoc
+    return (-v)
   
 
 ---------------------------- evalPostfixExpr ----------------------------
@@ -205,7 +235,14 @@ data PostfixExpr =
 --    + When there are no unprocessed tokens, the stack should contain
 --      a single PostfixExpr containing the value to be returned.
 postfixExpr :: String -> PostfixExpr
-postfixExpr str = PostfixLeaf 0 -- TODO
+postfixExpr str = head (foldl processToken [] (words str))
+processToken :: [PostfixExpr] -> String -> [PostfixExpr]
+processToken stack token
+  | token == "+"      = let (a:b:rest) = stack in PostfixAdd b a : rest
+  | token == "-"      = let (a:b:rest) = stack in PostfixSub b a : rest
+  | token == "*"      = let (a:b:rest) = stack in PostfixMul b a : rest
+  | token == "uminus" = let (a:rest) = stack in PostfixUminus a : rest
+  | otherwise         = PostfixLeaf (read token) : stack
 
 
 

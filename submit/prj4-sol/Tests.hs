@@ -295,14 +295,14 @@ testPostfixExpr = do
 --   Run:   run these tests when no tests are marked Only.
 --   Skip:  skip these tests.
 allTests = [
-    (Skip testToSingletonLists),
-    (Skip testListMap),
-    (Skip testMember),
-    (Skip testSelectNApart),
-    (Skip testEvalIntExpr),
-    (Skip testEvalIdExpr),
-    (Skip testEvalMaybeExpr),
-    (Skip testPostfixExpr)
+    (Only testToSingletonLists),
+    (Only testListMap),
+    (Only testMember),
+    (Only testSelectNApart),
+    (Only testEvalIntExpr),
+    (Only testEvalIdExpr),
+    (Only testEvalMaybeExpr),
+    (Only testPostfixExpr)
   ]
 
 
